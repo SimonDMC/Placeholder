@@ -1,0 +1,119 @@
+{
+	"block.soul_soil.break": {
+		"sounds": [
+		  "block/soul_soil/break1",
+		  "block/soul_soil/break2",
+		  "block/soul_soil/break3",
+		  "block/soul_soil/break4",
+		  "block/soul_soil/break5",
+		  "block/soul_soil/break6"
+		],
+		"subtitle": "subtitles.block.generic.break"
+	},
+	"custom.pause": {
+		"sounds": [
+			"custom/portal2"
+		],
+		"subtitle": "custom.pause"
+	},
+	"custom.resume": {
+		"sounds": [
+			"custom/portal"
+		],
+		"subtitle": "custom.resume"
+	},
+	"custom.furnace": {
+		"sounds": [
+			"custom/anvil"
+		],
+		"subtitle": "custom.furnace"
+	},
+	"custom.launch": {
+		"sounds": [
+			"custom/elytra_loop"
+		],
+		"subtitle": "custom.launch"
+	},
+	
+	"narrator.on_start": {
+		"sounds": ["narrator/on_start"]
+	},
+	"narrator.in_gap": {
+		"sounds": ["narrator/in_gap"]
+	},
+	"narrator.first_fuel": {
+		"sounds": ["narrator/first_fuel"]
+	},
+	"narrator.lvl2_begin": {
+		"sounds": ["narrator/lvl2_begin"]
+	},
+	"narrator.bridge_break": {
+		"sounds": ["narrator/bridge_break"]
+	},
+	"narrator.powder_craft": {
+		"sounds": ["narrator/powder_craft"]
+	},
+	"narrator.give_back_pause": {
+		"sounds": ["narrator/give_back_pause"]
+	},
+	"narrator.door_override": {
+		"sounds": ["narrator/door_override"]
+	},
+	"narrator.lever_lock": {
+		"sounds": ["narrator/lever_lock"]
+	},
+	"narrator.complete_lvl2": {
+		"sounds": ["narrator/complete_lvl2"]
+	},
+	"narrator.elevator_die": {
+		"sounds": ["narrator/elevator_die"]
+	},
+	"narrator.place_shulker": {
+		"sounds": ["narrator/place_shulker"]
+	},
+	"narrator.prototype_enter": {
+		"sounds": ["narrator/prototype_enter"]
+	},
+	"narrator.double_prototype": {
+		"sounds": ["narrator/double_prototype"]
+	},
+	"narrator.triple_prototype": {
+		"sounds": ["narrator/triple_prototype"]
+	},
+	"narrator.complete_lvl4": {
+		"sounds": ["narrator/complete_lvl4"]
+	},
+	"narrator.portal_corrupt": {
+		"sounds": ["narrator/portal_corrupt"]
+	},
+	"narrator.dumb_hole": {
+		"sounds": ["narrator/dumb_hole"]
+	},
+	"narrator.all_prongs": {
+		"sounds": ["narrator/all_prongs"]
+	},
+	"narrator.enter_3_2": {
+		"sounds": ["narrator/enter_3_2"]
+	},
+	"narrator.enter_tree": {
+		"sounds": ["narrator/enter_tree"]
+	},
+	"narrator.eyepiece_get": {
+		"sounds": ["narrator/eyepiece_get"]
+	},
+	"narrator.test_audio": {
+		"sounds": ["narrator/test_audio"]
+	},
+	"narrator.first_secret": {
+		"sounds": ["narrator/first_secret"]
+	},
+	"narrator.short_hint": {
+		"sounds": ["narrator/short_hint"]
+	},
+	"narrator.long_hint": {
+		"sounds": ["narrator/long_hint"]
+	},
+	"narrator.epilogue": {
+		"sounds": ["narrator/epilogue"]
+	}
+}

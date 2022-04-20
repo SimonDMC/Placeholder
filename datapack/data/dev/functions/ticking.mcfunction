@@ -1,0 +1,1 @@
+#execute as @a if predicate simondmc:lvl2/lever_lock run give @s stick

@@ -1,0 +1,246 @@
+{
+	"providers": [
+	
+	{"": "NEGATIVE SPACES - https://github.com/AmberWat/NegativeSpaceFont"},
+	
+	{
+		"type": "bitmap",
+		"file": "space:font/space_split.png",
+		"ascent": -32768,
+		"height": -3,
+		"chars": ["\uF801"]
+  },
+	{
+		"type": "bitmap",
+		"file": "space:font/space_split.png",
+		"ascent": -32768,
+		"height": -6,
+		"chars": ["\uF804"]
+  },
+	{
+		"type": "bitmap",
+		"file": "space:font/space_split.png",
+		"ascent": -32768,
+		"height": -10,
+		"chars": ["\uF808"]
+  },
+	{
+		"type": "bitmap",
+		"file": "space:font/space_split.png",
+		"ascent": -32768,
+		"height": 0,
+		"chars": ["\uF821"]
+	},
+	{
+		"type": "bitmap",
+		"file": "space:font/space_split.png",
+		"ascent": -32768,
+		"height": 1,
+		"chars": ["\uF822"]
+	},
+	{
+		"type": "bitmap",
+		"file": "space:font/space_split.png",
+		"ascent": -32768,
+		"height": -514,
+		"chars": ["\uF80E"]
+	},
+	
+	{"": "CUSTOM FONT CHARACTERS"},
+	
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/fade.png",
+		"ascent": 150,
+		"height": 300,
+		"__comment": "alt code: 22",
+		"chars": ["▬"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/wooden_pickaxe.png",
+		"ascent": 11,
+		"height": 78,
+		"__comment": "alt code: 23",
+		"chars": ["↨"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/stone_pickaxe.png",
+		"ascent": 11,
+		"height": 78,
+		"__comment": "alt code: 24",
+		"chars": ["↑"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/gray_concrete_powder.png",
+		"ascent": 11,
+		"height": 58,
+		"__comment": "alt code: 25",
+		"chars": ["↓"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/tnt.png",
+		"ascent": 11,
+		"height": 48,
+		"__comment": "alt code: 26",
+		"chars": ["→"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/trident_recipe.png",
+		"ascent": 50,
+		"height": 100,
+		"__comment": "alt code: 27",
+		"chars": ["←"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/banner.png",
+		"ascent": 11,
+		"height": 48,
+		"__comment": "alt code: 28",
+		"chars": ["∟"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/campfire_gray.png",
+		"ascent": -23,
+		"height": 16,
+		"__comment": "alt code: 29",
+		"chars": ["↔"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/tnt_gray.png",
+		"ascent": -23,
+		"height": 16,
+		"__comment": "alt code: 30",
+		"chars": ["▲"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/dripstone_gray.png",
+		"ascent": -23,
+		"height": 16,
+		"__comment": "alt code: 31",
+		"chars": ["▼"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/berries_gray.png",
+		"ascent": -23,
+		"height": 16,
+		"__comment": "alt code: 3",
+		"chars": ["♥"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/water_gray.png",
+		"ascent": -23,
+		"height": 16,
+		"__comment": "alt code: 4",
+		"chars": ["♦"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/pufferfish_gray.png",
+		"ascent": -23,
+		"height": 16,
+		"__comment": "alt code: 5",
+		"chars": ["♣"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/fns_gray.png",
+		"ascent": -23,
+		"height": 16,
+		"__comment": "alt code: 6",
+		"chars": ["♠"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/rod.png",
+		"ascent": 11,
+		"height": 68,
+		"__comment": "alt code: 7",
+		"chars": ["•"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/campfire.png",
+		"ascent": 11,
+		"height": 48,
+		"__comment": "alt code: 8",
+		"chars": ["◘"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/tnt4.png",
+		"ascent": 11,
+		"height": 48,
+		"__comment": "alt code: 10",
+		"chars": ["◙"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/crystal.png",
+		"ascent": 11,
+		"height": 48,
+		"__comment": "alt code: 11",
+		"chars": ["♂"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/anchor.png",
+		"ascent": 11,
+		"height": 48,
+		"__comment": "alt code: 12",
+		"chars": ["♀"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/fire_charge.png",
+		"ascent": 11,
+		"height": 48,
+		"__comment": "alt code: 13",
+		"chars": ["♪"]
+	},
+	
+	{"": "MAP LOGOS"},
+	
+	{
+		"type": "bitmap",
+		"file": "minecraft:logo/info.png",
+		"ascent": 15,
+		"height": 23,
+		"__comment": "alt codes: 456-461",
+		"chars": ["╚╔╩╦╠═"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:logo/start.png",
+		"ascent": 0,
+		"height": 57,
+		"__comment": "alt codes: 14-19",
+		"chars": ["♫☼►◄↕‼"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:logo/stats.png",
+		"ascent": 15,
+		"height": 23,
+		"__comment": "i ran out of alt codes whoops",
+		"chars": ["⤀⤁⤂⤃⤄⤅"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:logo/uhh.png",
+		"ascent": 8,
+		"height": 19.99,
+		"__comment": "unicode codes: \u1231-\u1238",
+		"chars": ["ሱሲሳሴስሶሷሸ"]
+	}]
+}

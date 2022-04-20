@@ -1,0 +1,14 @@
+{
+	"credit": "Made with Blockbench",
+	"__comment": "just aligns it with ground poggies",
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "block/full_empty"
+	},
+	"display": {
+		"head": {
+			"translation": [0, -30.425, 0],
+			"scale": [1.6, 1.6, 1.6]
+		}
+	}
+}

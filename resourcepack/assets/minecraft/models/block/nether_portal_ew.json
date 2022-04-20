@@ -1,0 +1,18 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "block/nether_portal",
+		"portal": "block/nether_portal"
+	},
+	"elements": [
+		{
+			"from": [0, 6, 0],
+			"to": [16, 10, 16],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#portal"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#portal"}
+			}
+		}
+	]
+}

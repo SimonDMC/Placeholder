@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/display",
+	"textures": {
+		"layer0": "item/totem_of_undying"
+	}
+}

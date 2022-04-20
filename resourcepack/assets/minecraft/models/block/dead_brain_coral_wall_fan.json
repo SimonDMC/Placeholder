@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/plate_rotated",
+  "textures": {
+    "texture": "minecraft:block/warped_planks"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "jump": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:jump_boost": {
+                        "amplifier": {
+                            "min": 0,
+                            "max": 0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "simondmc:lvl4/4-4/complete"
+    }
+}

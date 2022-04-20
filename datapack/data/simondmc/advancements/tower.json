@@ -1,0 +1,42 @@
+{
+    "display": {
+        "title": {
+            "text": "Tip of the Tower"
+        },
+        "description": {
+            "text": "Scale to the highest altitude on the level four mansion."
+        },
+        "icon": {
+            "item": "minecraft:spruce_log"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "position": {
+                    "x": {
+                        "min": 1017,
+                        "max": 1019
+                    },
+                    "y": {
+                        "min": 120,
+                        "max": 122
+                    },
+                    "z": {
+                        "min": 1026,
+                        "max": 1030
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "simondmc:core/secret_narrator"
+    },
+    "parent": "simondmc:proto"
+}

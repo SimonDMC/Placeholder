@@ -1,0 +1,1 @@
+summon ender_pearl 37.7 107.5 36.7 {NoGravity:1b,CustomNameVisible:1b,Tags:["display","pearl"],CustomName:'{"text":"Replenishing Ender Pearl","color":"light_purple"}',Item:{id:"minecraft:ender_pearl",Count:1b,tag:{Enchantments:[{}]}}}

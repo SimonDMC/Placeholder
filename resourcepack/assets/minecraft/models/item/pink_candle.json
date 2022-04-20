@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:item/display",
+  "textures": {
+    "layer0": "minecraft:item/writable_book"
+  },
+  "overrides": [
+    { "predicate": {"custom_model_data": 1}, "model": "item/display_pattern"},
+		{ "predicate": {"custom_model_data": 2}, "model": "item/display_book"},
+		{ "predicate": {"custom_model_data": 3}, "model": "item/display_star"},
+		{ "predicate": {"custom_model_data": 4}, "model": "item/display_enchanted"},
+		{ "predicate": {"custom_model_data": 5}, "model": "item/display_totem"}
+  ]
+}

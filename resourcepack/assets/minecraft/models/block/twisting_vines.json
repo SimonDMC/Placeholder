@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross_south",
+  "textures": {
+    "cross": "minecraft:block/twisting_vines"
+  }
+}

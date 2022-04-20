@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Press L to view Secrets"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:scaffolding"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "simondmc:tower"
+}

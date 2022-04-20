@@ -1,0 +1,8 @@
+summon villager 9.5 101.0 22.0 {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["crane"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"}}
+summon villager 9.0 101.0 22.0 {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["crane"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"}}
+summon villager 10.0 101.0 22.0 {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["crane"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"}}
+summon villager 9.5 101.0 23.0 {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["crane"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"}}
+summon villager 9.0 101.0 23.0 {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["crane"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"}}
+summon villager 10.0 101.0 23.0 {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["crane"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"}}
+summon villager 10.0 101.0 22.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["crane"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"}}
+summon villager 9.0 101.0 22.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["crane"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:1000000,ShowParticles:0b}],VillagerData:{profession:"minecraft:none"}}

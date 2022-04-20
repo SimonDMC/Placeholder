@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "item/lime_dye"
+	},
+	"display": {
+		"fixed": {
+			"translation": [0, 7, 0]
+		}
+	}
+}

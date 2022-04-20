@@ -1,0 +1,42 @@
+{
+    "display": {
+        "title": {
+            "text": "Fragile"
+        },
+        "description": {
+            "text": "Uncover the ancient rock foundation in level two."
+        },
+        "icon": {
+            "item": "minecraft:cracked_stone_bricks"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "position": {
+                    "x": {
+                        "min": 37,
+                        "max": 39
+                    },
+                    "y": {
+                        "min": 100,
+                        "max": 104
+                    },
+                    "z": {
+                        "min": 34,
+                        "max": 36
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "simondmc:core/secret_narrator"
+    },
+    "parent": "simondmc:sewer"
+}

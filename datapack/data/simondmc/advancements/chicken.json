@@ -1,0 +1,24 @@
+{
+    "": "HAHAHAH BET YOU DIDNT EXPECT A SECRET SECRET ADVANCEMENT HMMMMMMM? WELL GUESS WHAT, YOU HAVE TO FIND IT YOURSELF",
+    "display": {
+        "title": {
+            "text": "chicken of shame."
+        },
+        "description": {
+            "text": "WHAT IS THE MEANING OF IT ALL. THERE IS NO GOD IS THERE. NO. NOOOO"
+        },
+        "icon": {
+            "item": "minecraft:egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "simondmc:root"
+}

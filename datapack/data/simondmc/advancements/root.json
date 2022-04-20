@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Secrets"
+        },
+        "description": {
+            "text": "Hidden within the crevices."
+        },
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/quartz_block_bottom.png"
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

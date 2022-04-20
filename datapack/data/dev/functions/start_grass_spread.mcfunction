@@ -1,0 +1,1 @@
+scoreboard players set global grass_spread 1

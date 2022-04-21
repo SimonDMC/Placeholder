@@ -1,7 +1,8 @@
 # ticking function, controls the start lobby area
 
 # spawn outside lobby prevention
-execute unless score started intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..] run tp @a -11 85 -15 -90 1.3 
+execute unless score started intro matches 1 unless score oob intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..] run gamemode adventure @s
+execute unless score started intro matches 1 unless score oob intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..] run tp @s -11 85 -15 -90 1.3 
 
 # upwards boots door open
 execute as @a[x=-6,y=91,z=-15,dx=2] run setblock -5 94 -16 redstone_block
@@ -64,6 +65,8 @@ execute as @a[x=-15,y=86,z=-24,distance=..5] if score @s clicked matches 1.. run
 execute as @a[x=-15,y=86,z=-24,distance=..5] if score @s clicked matches 1.. at @s run playsound minecraft:entity.experience_orb.pickup master @s
 execute as @a[x=-15,y=86,z=-24,distance=..5] if score @s clicked matches 1.. run scoreboard players set @s credit 1
 execute as @a[x=-17,y=85,z=-15,distance=..15] run scoreboard players reset @a clicked
+# make sure they're invisible
+effect give @e[tag=nameclick] minecraft:invisibility 1000000 1 true
 
 # test audio button
 execute if block -30 86 -22 birch_button[powered=true] run scoreboard players set audiotrigger intro 1

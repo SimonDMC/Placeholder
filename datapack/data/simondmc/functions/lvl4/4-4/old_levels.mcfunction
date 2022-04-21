@@ -1,7 +1,7 @@
 # ticking function, controls the stuff from 1-2, most code is taken straight from lvl 1 with small adjustments
 # code duplicate due to tag system, easier than making it cross-compatible and loads less functions total
 
-# pickup axe, also does some recipe stuff cuz why not
+# pickup axe
 execute as @e[tag=axe] at @s as @a[distance=..1.3] run give @s iron_axe{CanDestroy:["minecraft:oak_wood","minecraft:nether_wart"],HideFlags:2,Enchantments:[{id:"minecraft:efficiency",lvl:2s}]} 1
 execute as @e[tag=axe] at @s as @a[distance=..1.3] run playsound entity.item.pickup master @s ~ ~ ~ 0.5
 execute as @e[tag=axe] at @s as @a[distance=..1.3] run kill @e[tag=axe]

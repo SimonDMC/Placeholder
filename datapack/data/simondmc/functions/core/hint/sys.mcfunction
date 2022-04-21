@@ -7,7 +7,7 @@ execute as @a[tag=lvl3] if score @s hint matches 1 unless score global hint matc
 execute as @a[tag=lvl4] if score @s hint matches 1 unless score global hint matches 1 run function simondmc:core/hint/lvl4
 
 # add to scoreboard
-execute as @a[tag=lvl1] if score @s hint matches 1 unless score global hint matches 1 run scoreboard players add @s hints 1
+execute as @a if score @s hint matches 1 unless score global hint matches 1 run scoreboard players add @s hints 1
 
 # narrator line (decide between short or long)
 # short (0-15)

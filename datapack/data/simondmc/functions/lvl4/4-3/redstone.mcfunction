@@ -73,3 +73,6 @@ execute if score global multiplayer matches 2.. as @a[x=-1004,y=114,z=-999,dy=1]
 # narrator line
 execute as @a[x=-1004,y=114,z=-999,dy=1] unless score tp3 4 matches 1 run scoreboard players set id narrator 11
 execute as @a[x=-1004,y=114,z=-999,dy=1] run scoreboard players set tp3 4 1
+
+# trapdoor stuck patch
+execute as @a[x=-1019,y=115,z=-999,dy=0] run tp @s -1012.98 114.00 -998.36 -268.51 1.62

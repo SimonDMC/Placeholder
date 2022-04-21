@@ -21,3 +21,8 @@ schedule function simondmc:start/optifine 2s
 schedule function simondmc:start/version_check 3s
 # gamerules
 gamerule sendCommandFeedback false
+# show advancements
+advancement grant @s only simondmc:root
+advancement grant @s only simondmc:util/show_all
+# reset oob bypass
+scoreboard players reset oob intro

@@ -10,7 +10,7 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:moss_block"}}] run data merge e
 kill @e[type=item,nbt={Item:{id:"minecraft:charcoal"}}]
 
 # make barrel accessible when on the top
-execute if entity @a[x=1018,y=113,z=1029,dx=0] run fill 1019 114 1032 1019 113 1033 air replace minecraft:barrier
+execute if entity @a[x=1019,y=112,z=1031,dy=1] run fill 1019 114 1032 1019 113 1033 air replace minecraft:barrier
 
 # make campfire bottle on forever
 data modify block 1008 101 1025 CookingTimes[0] set value -1000000

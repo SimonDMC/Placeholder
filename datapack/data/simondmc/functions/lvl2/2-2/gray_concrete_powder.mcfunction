@@ -23,8 +23,9 @@ execute if block 15 103 53 minecraft:gray_concrete_powder run setblock 15 103 53
 execute if block 15 103 53 minecraft:soul_soil run summon falling_block 15 104 53 {BlockState:{Name:"minecraft:gray_concrete_powder"},Time:1,Motion:[0.405,1.0,0.075]}
 execute if block 15 103 53 minecraft:soul_soil run setblock 15 103 53 air
 
-# remove barrier if 2-2 completed
+# remove barriers if 2-2 completed
 execute if block 26 105 55 gray_concrete run setblock 27 107 55 air
+execute if block 26 105 55 gray_concrete run setblock 28 107 56 air
 
 # replace soil with powder
 execute as @a if score @s soul_soil matches 1..100 run scoreboard players add global soil_timer 1

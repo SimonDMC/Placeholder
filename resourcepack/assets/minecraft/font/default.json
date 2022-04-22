@@ -28,6 +28,13 @@
 		"type": "bitmap",
 		"file": "space:font/space_split.png",
 		"ascent": -32768,
+		"height": -514,
+		"chars": ["\uF80E"]
+	},
+	{
+		"type": "bitmap",
+		"file": "space:font/space_split.png",
+		"ascent": -32768,
 		"height": 0,
 		"chars": ["\uF821"]
 	},
@@ -42,8 +49,29 @@
 		"type": "bitmap",
 		"file": "space:font/space_split.png",
 		"ascent": -32768,
-		"height": -514,
-		"chars": ["\uF80E"]
+		"height": 7,
+		"chars": ["\uF828"]
+	},
+	{
+		"type": "bitmap",
+		"file": "space:font/space_split.png",
+		"ascent": -32768,
+		"height": 15,
+		"chars": ["\uF829"]
+	},
+	{
+		"type": "bitmap",
+		"file": "space:font/space_split.png",
+		"ascent": -32768,
+		"height": 31,
+		"chars": ["\uF82A"]
+	},
+	{
+		"type": "bitmap",
+		"file": "space:font/space_split.png",
+		"ascent": -32768,
+		"height": 63,
+		"chars": ["\uF82B"]
 	},
 	
 	{"": "CUSTOM FONT CHARACTERS"},
@@ -207,6 +235,13 @@
 		"height": 48,
 		"__comment": "alt code: 13",
 		"chars": ["♪"]
+	},
+	{
+		"type": "bitmap",
+		"file": "minecraft:icons/burn_guide.png",
+		"ascent": 13,
+		"height": 65,
+		"chars": ["҉"]
 	},
 	
 	{"": "MAP LOGOS"},

@@ -3,7 +3,6 @@
 effect clear @a slowness
 clear @a carrot_on_a_stick
 clear @a fishing_rod
-clear @a rabbit_foot
 clear @a golden_shovel
 clear @a water_bucket
 xp set @a 0

@@ -45,7 +45,7 @@ execute as @a[nbt={Inventory:[{id:"minecraft:potion",tag:{Potion:"minecraft:long
 execute as @a if score @s banner matches 2 if score pot 4 matches 1 if entity @a[nbt={Inventory:[{id:"minecraft:campfire"}]}] run scoreboard players set complete4 4 1
 
 # purple room door unlock
-execute unless block -998 122 -970 barrel{Items:[{Slot:13b}]} unless block -1003 121 -973 barrel{Items:[{Slot:13b}]} run setblock -1001 120 -975 air
+execute unless block -998 122 -970 barrel{Items:[{Slot:13b}]} unless block -1003 121 -973 purple_shulker_box{Items:[{Slot:13b}]} run setblock -1001 120 -975 air
 
 # campfire nbt craft
 execute as @a if score @s campfire_craft matches 1 run clear @s dead_horn_coral_fan

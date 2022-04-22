@@ -4,6 +4,7 @@
 execute if score global multiplayer matches 1 unless score global copper_pressed matches 1..2 if block 41 108 41 minecraft:acacia_pressure_plate[powered=true] as @a at @s run playsound minecraft:block.chain.break master @s
 execute if score global multiplayer matches 1 unless score global copper_pressed matches 1..2 if block 41 108 41 minecraft:acacia_pressure_plate[powered=true] as @a at @s run playsound minecraft:block.chain.place master @s
 execute if score global multiplayer matches 1 unless score global copper_pressed matches 1..2 if block 41 108 41 minecraft:acacia_pressure_plate[powered=true] as @a at @s run playsound minecraft:block.piston.extend master @s ~ ~ ~ 0.5
+execute if score global multiplayer matches 1 unless score global copper_pressed matches 1..2 if block 41 108 41 minecraft:acacia_pressure_plate[powered=true] run title @a actionbar "§a<Door Opened>"
 execute if score global multiplayer matches 1 unless score global copper_pressed matches 1..2 if block 41 108 41 minecraft:acacia_pressure_plate[powered=true] run clone 37 73 52 38 80 57 50 110 45
 execute if score global multiplayer matches 1 unless score global copper_pressed matches 1..2 if block 41 108 41 minecraft:acacia_pressure_plate[powered=true] run scoreboard players set global copper_pressed 1
 
@@ -11,6 +12,7 @@ execute if score global multiplayer matches 1 unless score global copper_pressed
 execute if score global multiplayer matches 2.. unless score global copper_pressed matches 1..2 unless entity @a[x=41,y=108,z=41,distance=1..] as @a at @s run playsound minecraft:block.chain.break master @s
 execute if score global multiplayer matches 2.. unless score global copper_pressed matches 1..2 unless entity @a[x=41,y=108,z=41,distance=1..] as @a at @s run playsound minecraft:block.chain.place master @s
 execute if score global multiplayer matches 2.. unless score global copper_pressed matches 1..2 unless entity @a[x=41,y=108,z=41,distance=1..] as @a at @s run playsound minecraft:block.piston.extend master @s ~ ~ ~ 0.5
+execute if score global multiplayer matches 2.. unless score global copper_pressed matches 1..2 unless entity @a[x=41,y=108,z=41,distance=1..] run title @a actionbar "§a<Door Opened>"
 execute if score global multiplayer matches 2.. unless score global copper_pressed matches 1..2 unless entity @a[x=41,y=108,z=41,distance=1..] run clone 37 73 52 38 80 57 50 110 45
 execute if score global multiplayer matches 2.. unless score global copper_pressed matches 1..2 unless entity @a[x=41,y=108,z=41,distance=1..] run scoreboard players set global copper_pressed 1
 
@@ -18,6 +20,7 @@ execute if score global multiplayer matches 2.. unless score global copper_press
 execute if score global multiplayer matches 1 if score global copper_pressed matches 1 if block 41 108 41 minecraft:acacia_pressure_plate[powered=false] as @a at @s run playsound minecraft:block.chain.break master @s
 execute if score global multiplayer matches 1 if score global copper_pressed matches 1 if block 41 108 41 minecraft:acacia_pressure_plate[powered=false] as @a at @s run playsound minecraft:block.chain.place master @s
 execute if score global multiplayer matches 1 if score global copper_pressed matches 1 if block 41 108 41 minecraft:acacia_pressure_plate[powered=false] as @a at @s run playsound minecraft:block.piston.contract master @s ~ ~ ~ 0.5
+execute if score global multiplayer matches 1 if score global copper_pressed matches 1 if block 41 108 41 minecraft:acacia_pressure_plate[powered=false] run title @a actionbar "§c<Door Closed>"
 execute if score global multiplayer matches 1 if score global copper_pressed matches 1 if block 41 108 41 minecraft:acacia_pressure_plate[powered=false] run clone 37 73 44 38 80 49 50 110 45
 execute if score global multiplayer matches 1 if score global copper_pressed matches 1 if block 41 108 41 minecraft:acacia_pressure_plate[powered=false] run scoreboard players reset global copper_pressed
 
@@ -25,6 +28,7 @@ execute if score global multiplayer matches 1 if score global copper_pressed mat
 execute if score global multiplayer matches 2.. if score global copper_pressed matches 1 if entity @a[x=41,y=108,z=41,distance=1..] as @a at @s run playsound minecraft:block.chain.break master @s
 execute if score global multiplayer matches 2.. if score global copper_pressed matches 1 if entity @a[x=41,y=108,z=41,distance=1..] as @a at @s run playsound minecraft:block.chain.place master @s
 execute if score global multiplayer matches 2.. if score global copper_pressed matches 1 if entity @a[x=41,y=108,z=41,distance=1..] as @a at @s run playsound minecraft:block.piston.contract master @s ~ ~ ~ 0.5
+execute if score global multiplayer matches 2.. if score global copper_pressed matches 1 if entity @a[x=41,y=108,z=41,distance=1..] run title @a actionbar "§c<Door Closed>"
 execute if score global multiplayer matches 2.. if score global copper_pressed matches 1 if entity @a[x=41,y=108,z=41,distance=1..] run clone 37 73 44 38 80 49 50 110 45
 execute if score global multiplayer matches 2.. if score global copper_pressed matches 1 if entity @a[x=41,y=108,z=41,distance=1..] run scoreboard players reset global copper_pressed
 

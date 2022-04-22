@@ -14,7 +14,7 @@ clear @a[x=-1003,y=120,z=-992,distance=..7] blaze_powder
 item replace block -1005 121 -993 container.4 with blaze_powder
 
 # continuous jump boost give
-execute if score jump 4 matches 1 run effect give @a jump_boost 5 1
+execute if score jump 4 matches 1 run effect give @a jump_boost 1000000 1
 
 # brewing stand speed-up
 execute store result score brewing 4 run data get block -1005 121 -993 BrewTime

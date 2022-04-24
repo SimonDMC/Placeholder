@@ -61,8 +61,8 @@ execute if score id narrator matches 3 run scoreboard players set 3 narrator 1
 execute if score 3 narrator matches 1.. run scoreboard players add 3 narrator 1
 execute if score 3 narrator matches 2 as @a at @s run playsound narrator.first_fuel voice @s ~ ~ ~
 execute if score 3 narrator matches 2 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"Hey, I told you not to touch anything. I really don't think you're supposed to mess with that.","color":"gray"}]
-execute if score 3 narrator matches 87 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"Also, unrelated, but why does it use fuel to lower? That's like… §ophysically inexplicable…","color":"gray"}]
-execute if score 3 narrator matches 87 run scoreboard players reset 3 narrator
+execute if score 3 narrator matches 74 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"Also, unrelated, but why does the crane use fuel to lower? That's like… §ophysically inexplicable…","color":"gray"}]
+execute if score 3 narrator matches 74 run scoreboard players reset 3 narrator
 
 execute if score id narrator matches 4 run scoreboard players set 4 narrator 1
 execute if score 4 narrator matches 1.. run scoreboard players add 4 narrator 1

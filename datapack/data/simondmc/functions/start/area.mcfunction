@@ -1,8 +1,8 @@
 # ticking function, controls the start lobby area
 
 # spawn outside lobby prevention
-execute unless score started intro matches 1 unless score oob intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..] run gamemode adventure @s
-execute unless score started intro matches 1 unless score oob intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..] run tp @s -11 85 -15 -90 1.3 
+execute unless score oob intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..] run gamemode adventure @s
+execute unless score oob intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..] run tp @s -11 85 -15 -90 1.3 
 
 # upwards boots door open
 execute as @a[x=-6,y=91,z=-15,dx=2] run setblock -5 94 -16 redstone_block
@@ -38,16 +38,16 @@ execute if block -6 86 -15 polished_blackstone_button[powered=true] run function
 execute if block -6 86 -15 polished_blackstone_button[powered=true] run setblock -6 86 -15 polished_blackstone_button[facing=west]
 
 # spam title in start area
-execute unless entity @a[tag=ingame] unless score started intro matches 1 run title @a times 0 100 0
-execute unless entity @a[tag=ingame] unless score started intro matches 1 run title @a subtitle {"translate":"§cUse '/trigger rp' to download resource pack."}
-execute unless entity @a[tag=ingame] unless score started intro matches 1 run title @a title {"translate":"§c§lRESOURCE PACK OFF"}
+title @a times 0 100 0
+title @a subtitle {"translate":"§cUse '/trigger rp' to download resource pack."}
+title @a title {"translate":"§c§lRESOURCE PACK OFF"}
 
 # particlesss
 execute at @e[tag=eureka] run particle dust_color_transition 0.769 0.435 0.000 1 0.349 0.200 0.000 ~ ~-1.2 ~ .17 0 .17 0 4 normal
 execute at @e[tag=simon] run particle dust_color_transition 0.000 1.000 0.000 1 0.000 0.349 0.000 ~ ~-1.2 ~ .17 0 .17 0 4 normal
 
 # item animation
-execute unless entity @a[tag=ingame] run scoreboard players add item intro 1
+scoreboard players add item intro 1
 execute if score item intro matches 120 run scoreboard players set item intro 0
 
 execute if score item intro matches 0 run data merge entity @e[tag=item,limit=1] {Item:{id:"pink_candle",Count:1b,tag:{CustomModelData:0}}}
@@ -60,12 +60,16 @@ execute if score item intro matches 100 run data merge entity @e[tag=item,limit=
 # credit display
 execute as @a[x=-15,y=86,z=-24,distance=..5] unless score @s credit matches 1 run title @s actionbar ["",{"text":"\u2139 ","color":"gold"},{"text":"Try clicking the statues!","color":"yellow"}]
 
-# click statue
+# click statue villager
 execute as @a[x=-15,y=86,z=-24,distance=..5] if score @s clicked matches 1.. run tellraw @s ["",{"text":"\n"},{"text":"-- From the creators of Upwards --","color":"light_purple"},{"text":"\n"},{"text":"Coding, Models & Narration: ","color":"yellow"},{"text":"SimonDMC","color":"gold"},{"text":"\n"},{"text":"> ","color":"green"},{"text":"simondmc.com","color":"green","clickEvent":{"action":"open_url","value":"https://simondmc.com"}},{"text":"\n"},{"text":"Building, Story & Game Design: ","color":"yellow"},{"text":"EurekaX","color":"gold"},{"text":"\n"},{"text":"> ","color":"red"},{"text":"youtube.com/EurekaX","color":"red","clickEvent":{"action":"open_url","value":"https://youtube.com/EurekaX"}}]
 execute as @a[x=-15,y=86,z=-24,distance=..5] if score @s clicked matches 1.. at @s run playsound minecraft:entity.experience_orb.pickup master @s
 execute as @a[x=-15,y=86,z=-24,distance=..5] if score @s clicked matches 1.. run scoreboard players set @s credit 1
-execute as @a[x=-17,y=85,z=-15,distance=..15] run scoreboard players reset @a clicked
-# make sure they're invisible
+
+# click info villager
+execute as @a unless entity @s[x=-15,y=86,z=-24,distance=..5] if score @s clicked matches 1.. run scoreboard players set t_info intro 1
+scoreboard players reset @a clicked
+
+# make sure statue villagers are invisible
 effect give @e[tag=nameclick] minecraft:invisibility 1000000 1 true
 
 # test audio button

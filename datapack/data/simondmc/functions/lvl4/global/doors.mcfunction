@@ -46,8 +46,10 @@ execute if score complete4 4 matches 1 unless score 4 4 matches 1 run scoreboard
 # sorry it was kinda annoying and in the way
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run clear @a golden_shovel
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run clear @a scaffolding
+execute if score complete4 4 matches 1 unless score 4 4 matches 1 run clear @a gravel
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run kill @e[type=item,nbt={Item:{id:"minecraft:golden_shovel"}}]
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run kill @e[type=item,nbt={Item:{id:"minecraft:scaffolding"}}]
+execute if score complete4 4 matches 1 unless score 4 4 matches 1 run kill @e[type=item,nbt={Item:{id:"minecraft:gravel"}}]
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run recipe take @a blaze_powder
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run scoreboard players set 4 4 1
 

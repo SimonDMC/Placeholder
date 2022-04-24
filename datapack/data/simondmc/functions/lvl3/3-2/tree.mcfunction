@@ -34,3 +34,7 @@ execute if score cutscene tree matches 42 run tp @a 1057.97 100.00 1029.62 -90.3
 execute if score cutscene tree matches 42 run gamemode adventure @a
 execute if score cutscene tree matches 42 run scoreboard players set global tree 1
 execute if score cutscene tree matches 42 as @a[level=0] run xp set @s 1 levels
+
+# scream at the player if theyre missing stuff
+execute unless block 1078 106 1018 barrel{Items:[{Slot:13b}]} unless block 1084 101 1027 brown_shulker_box{Items:[{Slot:12b}]} unless block 1084 101 1027 brown_shulker_box{Items:[{Slot:14b}]} unless block 1076 101 1039 barrel{Items:[{Slot:13b}]} run scoreboard players set items tree 1
+execute as @a if score @s tree matches -1 unless score items tree matches 1 run title @a actionbar "§cYou are missing items from outside the tree."

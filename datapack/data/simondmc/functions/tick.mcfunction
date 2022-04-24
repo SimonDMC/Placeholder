@@ -15,7 +15,7 @@ function simondmc:core/hint/slot
 
 function simondmc:start/intro
 function simondmc:start/grass_spread
-function simondmc:start/area
+execute unless score started intro matches 1 run function simondmc:start/area
 
 execute if entity @a[tag=lvl1] run function simondmc:lvl1/axe
 execute if entity @a[tag=lvl1] run function simondmc:lvl1/crane

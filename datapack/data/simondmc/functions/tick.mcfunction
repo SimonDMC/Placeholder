@@ -23,6 +23,7 @@ execute if entity @a[tag=lvl1] run function simondmc:lvl1/pickaxe
 execute if entity @a[tag=lvl1] run function simondmc:lvl1/furnace
 
 execute if entity @a[tag=lvl2] run function simondmc:lvl2/2-1/breaking
+execute if entity @a[tag=lvl2] run function simondmc:lvl2/2-1/gravity_blocks
 execute if entity @a[tag=lvl2] run function simondmc:lvl2/2-2/gray_concrete_powder
 execute if entity @a[tag=lvl2] run function simondmc:lvl2/2-2/water
 execute if entity @a[tag=lvl2] run function simondmc:lvl2/2-3/copper

@@ -1,0 +1,42 @@
+{
+	
+	"": "NBT CRAFTING DISPLAYS",
+	
+	"block.minecraft.tube_coral": "\uF804↨\uF808",
+	"block.minecraft.brain_coral": "\uF804↑\uF808",
+	"block.minecraft.budding_amethyst": "\uF804↓\uF808",
+	"block.minecraft.lapis_block": "\uF804→\uF808",
+	"block.minecraft.dead_fire_coral": "\uF804∟\uF808",
+	"block.minecraft.dead_tube_coral_fan": "\uF804•\uF808",
+	"block.minecraft.dead_horn_coral_fan": "\uF804◘\uF808",
+	"block.minecraft.brain_coral_block": "\uF804◙\uF808",
+	"block.minecraft.brain_coral_fan": "\uF804♂\uF808",
+	"block.minecraft.bubble_coral_block": "\uF804♀\uF808",
+	"block.minecraft.bubble_coral_fan": "\uF804♪\uF808",
+	
+	"": "CUSTOM SOUND SUBTITLES",
+	
+	"custom.pause": "Pause activates",
+	"custom.resume": "Pause deactivates",
+	"custom.furnace": "Furnace breaks",
+	"custom.launch": "Player launches",
+	
+	"": "MUSIC AND SOUNDS",
+	
+	"soundCategory.music": "Default Music",
+	"soundCategory.ambient": "§dCustom Music",
+	"soundCategory.voice": "§dVoice Acting",
+	
+	"": "MISC",
+	
+	"block.minecraft.soul_soil": "Gray Concrete Powder",
+	"block.minecraft.tube_coral_fan": "Gunpowder",
+	"enchantment.minecraft.projectile_protection": "Magnetism",
+	"custom.elevator_die": " was squished in an elevator",
+	
+	"": "RESOURCE PACK DETECTION SYSTEM",
+	
+	"§c§lRESOURCE PACK OFF": "",
+	"§cUse '/trigger rp' to download resource pack.": "",
+	"Click here to download the resource pack.": "If you're seeing this message, you have the resource pack on!"
+}

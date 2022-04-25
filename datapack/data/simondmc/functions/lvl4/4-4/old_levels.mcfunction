@@ -63,7 +63,7 @@ execute as @a if score @s stone_pickaxe matches 1 run give @s stone_pickaxe{CanD
 execute as @a if score @s stone_pickaxe matches 1 run scoreboard players reset @s stone_pickaxe
 
 # gravel convert
-execute as @e[type=item,nbt={Item:{id:"minecraft:gravel"}}] run data merge entity @s {Item:{id:"gravel",tag:{CanPlaceOn:["tuff"]}}}
+execute as @e[type=item,nbt={Item:{id:"minecraft:gravel"}}] run data merge entity @s {Item:{id:"gravel",tag:{CanPlaceOn:["tuff"],Enchantments:[{}]}}}
 
 # pickaxe custom item damage sys
 execute as @a if score @s stone matches 1 if score pickaxe2 break matches 2 run clear @a wooden_pickaxe

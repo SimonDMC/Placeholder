@@ -10,8 +10,8 @@ execute as @a[tag=lvl4] if score @s hint matches 1 unless score global hint matc
 execute as @a if score @s hint matches 1 unless score global hint matches 1 run scoreboard players add @s hints 1
 
 # narrator line (decide between short or long)
-# short (0-15)
-execute as @a unless score first hint matches 1 if score @s hint matches 1 if score m timer matches ..15 if score h timer matches 0 run scoreboard players set id narrator 24
+# short (2-15)
+execute as @a unless score first hint matches 1 if score @s hint matches 1 if score m timer matches 2..15 if score h timer matches 0 run scoreboard players set id narrator 24
 # long (16-59)
 execute as @a unless score first hint matches 1 if score @s hint matches 1 if score m timer matches 16.. if score h timer matches 0 run scoreboard players set id narrator 25
 # long (1h+)

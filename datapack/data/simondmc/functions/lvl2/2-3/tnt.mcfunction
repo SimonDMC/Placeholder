@@ -2,14 +2,14 @@
 
 # crafting
 execute as @a if score @s tnt matches 1 run clear @s lapis_block
-execute as @a if score @s tnt matches 1 run give @s tnt{CanPlaceOn:["minecraft:polished_deepslate"],display:{Name:'{"text":"Auto-TNT","italic":false}'}}
+execute as @a if score @s tnt matches 1 run give @s tnt{CanPlaceOn:["minecraft:polished_deepslate"],display:{Name:'{"text":"Auto-TNT","italic":false}',Lore:['{"text":" "}','{"text":"Strong enough to","color":"gray","italic":false}','{"text":"shatter weak walls.","color":"gray","italic":false}']}}
 execute as @a if score @s tnt matches 1 run scoreboard players reset @s tnt
 
 # fake explosion
 execute as @e[type=tnt,nbt={Fuse:1s}] at @s run particle explosion ~ ~ ~ 1 1 1 0 10
 execute as @e[type=tnt,nbt={Fuse:1s}] at @s run playsound entity.generic.explode master @a ~ ~ ~ 1.5
 execute as @e[type=tnt,nbt={Fuse:1s},x=30,y=114,z=25,distance=..3] run scoreboard players set done tnt 1
-execute as @e[type=tnt,nbt={Fuse:1s}] unless score done tnt matches 1 run give @r tnt{CanPlaceOn:["minecraft:polished_deepslate"],display:{Name:'{"text":"Auto-TNT","italic":false}'}}
+execute as @e[type=tnt,nbt={Fuse:1s}] unless score done tnt matches 1 run give @r tnt{CanPlaceOn:["minecraft:polished_deepslate"],display:{Name:'{"text":"Auto-TNT","italic":false}',Lore:['{"text":" "}','{"text":"Strong enough to","color":"gray","italic":false}','{"text":"shatter weak walls.","color":"gray","italic":false}']}}
 
 # patch flashes
 execute if score fuse tnt_timer matches 5..7 run scoreboard players set fuse tnt_timer 8

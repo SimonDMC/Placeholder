@@ -5,6 +5,7 @@ execute as @a if score @s gray_concrete_powder matches 1 run clear @s budding_am
 execute as @a if score @s gray_concrete_powder matches 1 run give @s soul_soil{CanPlaceOn:["minecraft:tuff","piston"]}
 # narrator line
 execute as @a if score @s gray_concrete_powder matches 1 run scoreboard players set id narrator 6
+execute as @a if score @s gray_concrete_powder matches 1 run scoreboard players set crafted gray_concrete_powder 1
 execute as @a if score @s gray_concrete_powder matches 1 run scoreboard players reset @s gray_concrete_powder
 
 # dropped/broken item conversion

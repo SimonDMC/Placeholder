@@ -15,6 +15,7 @@ function simondmc:core/hint/slot
 
 function simondmc:start/intro
 function simondmc:start/grass_spread
+function simondmc:start/info
 execute unless score started intro matches 1 run function simondmc:start/area
 
 execute if entity @a[tag=lvl1] run function simondmc:lvl1/axe
@@ -46,7 +47,7 @@ execute if entity @a[tag=lvl3] run function simondmc:lvl3/3-2/vault
 execute if entity @a[tag=lvl4] run function simondmc:lvl4/global/elevator
 execute if entity @a[tag=lvl4] run function simondmc:lvl4/global/launcher
 execute if entity @a[tag=lvl4] run function simondmc:lvl4/global/doors
-execute if entity @a[tag=lvl4] run function simondmc:lvl4/4-1/sneak
+execute if entity @a[tag=lvl4] run function simondmc:lvl4/global/sneak
 execute if entity @a[tag=lvl4] run function simondmc:lvl4/4-1/dripleaf
 execute if entity @a[tag=lvl4] run function simondmc:lvl4/4-2/shulker
 execute if entity @a[tag=lvl4] run function simondmc:lvl4/4-2/crafting

@@ -8,6 +8,8 @@ execute if score global multiplayer matches 2.. run effect give @a invisibility 
 scoreboard players reset global hint
 kill @e[tag=glower]
 tag @a add lvl3
+tag @a remove lvl1
+tag @a remove lvl2
 tag @a remove lvl4
 spawnpoint @a 1008 93 1026 -270
 # call fall entity check

@@ -44,6 +44,7 @@ execute if block -1014 114 -1000 lever[powered=true] run setblock -1018 115 -999
 
 # open trapdoor
 execute if block -1015 114 -998 lever[powered=true] if block -1015 114 -999 lever[powered=true] if block -1014 114 -999 lever[powered=true] if block -1013 114 -999 lever[powered=true] if block -1013 114 -1000 lever[powered=true] if block -1013 114 -998 lever[powered=false] if block -1014 114 -998 lever[powered=false] if block -1015 114 -1000 lever[powered=false] if block -1014 114 -1000 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=false] run playsound block.iron_trapdoor.open master @a -1017.81 115.43 -998.36 1
+execute if block -1015 114 -998 lever[powered=true] if block -1015 114 -999 lever[powered=true] if block -1014 114 -999 lever[powered=true] if block -1013 114 -999 lever[powered=true] if block -1013 114 -1000 lever[powered=true] if block -1013 114 -998 lever[powered=false] if block -1014 114 -998 lever[powered=false] if block -1015 114 -1000 lever[powered=false] if block -1014 114 -1000 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=false] as @a at @s run playsound entity.experience_orb.pickup master @s
 execute if block -1015 114 -998 lever[powered=true] if block -1015 114 -999 lever[powered=true] if block -1014 114 -999 lever[powered=true] if block -1013 114 -999 lever[powered=true] if block -1013 114 -1000 lever[powered=true] if block -1013 114 -998 lever[powered=false] if block -1014 114 -998 lever[powered=false] if block -1015 114 -1000 lever[powered=false] if block -1014 114 -1000 lever[powered=false] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=false]
 
 # light up lamps below
@@ -76,3 +77,7 @@ execute as @a[x=-1004,y=114,z=-999,dy=1] run scoreboard players set tp3 4 1
 
 # trapdoor stuck patch
 execute as @a[x=-1019,y=115,z=-999,dy=0] run tp @s -1012.98 114.00 -998.36 -268.51 1.62
+
+# make sure shulker cant break item frame
+execute as @a[nbt={SelectedItem:{tag:{Sneak:1b}}}] as @e[tag=redstone_frame] run data merge entity @s {Fixed:1b}
+execute unless entity @a[nbt={SelectedItem:{tag:{Sneak:1b}}}] as @e[tag=redstone_frame] run data merge entity @s {Fixed:0b}

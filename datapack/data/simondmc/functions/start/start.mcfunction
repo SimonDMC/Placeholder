@@ -1,4 +1,4 @@
-# called by a cmd block, starts the map lmao
+# called by simondmc:start/area, starts the map lmao
 
 # set up intro animation
 fill -1 101 -2 1 103 -2 chiseled_quartz_block
@@ -34,10 +34,6 @@ scoreboard players reset @a clicked
 
 # remove start entity nametag visibility
 execute as @e[tag=start] run data merge entity @s {CustomNameVisible:0b}
-
-# reset test triggers
-scoreboard players reset @a testmusic
-scoreboard players reset @a testnarrator
 
 # no more starting the map :skull:
 setblock -6 86 -15 oak_wall_sign[facing=west]{Text2:'{"text":"The map has"}',Text3:'{"text":"already started!"}'} replace

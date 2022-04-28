@@ -10,6 +10,7 @@ xp set @a 0 levels
 scoreboard players reset global hint
 kill @e[tag=glower]
 tag @a add lvl4
+tag @a remove lvl1
 tag @a remove lvl2
 gamerule randomTickSpeed 0
 # call fall entity check

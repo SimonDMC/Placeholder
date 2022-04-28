@@ -49,7 +49,6 @@ scoreboard objectives add tnt crafted:lapis_block
 scoreboard objectives add leave custom:leave_game
 scoreboard objectives add pearl used:ender_pearl
 scoreboard objectives add copper_pressed dummy
-scoreboard objectives add testnarrator trigger
 scoreboard objectives add tree used:bone_meal
 scoreboard objectives add smelting_wood dummy
 scoreboard objectives add walkthrough trigger
@@ -57,7 +56,6 @@ scoreboard objectives add coal mined:coal_ore
 scoreboard objectives add grass_spread dummy
 scoreboard objectives add pearl_inform dummy
 scoreboard objectives add s_death deathCount
-scoreboard objectives add testmusic trigger
 scoreboard objectives add morestats trigger
 scoreboard objectives add stone mined:stone
 scoreboard objectives add water_timer dummy

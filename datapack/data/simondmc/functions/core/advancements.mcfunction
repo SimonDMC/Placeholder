@@ -2,6 +2,8 @@
 
 advancement grant @a[x=-14,y=100,z=14,dy=1] only simondmc:sewer
 advancement grant @a[x=37,y=102,z=34,dx=2,dy=2,dz=2] only simondmc:fragile
+execute if entity @a[x=37,y=102,z=34,dx=2,dy=2,dz=2] run setblock 38 106 30 minecraft:iron_trapdoor
+execute if entity @a[x=37,y=102,z=34,dx=2,dy=2,dz=2] run setblock 38 105 30 minecraft:ladder[facing=south]
 execute as @a[x=-1015,y=131,z=-981,dy=1] run scoreboard players set first secrets 1
 # narrator line
 execute as @a[x=-1015,y=131,z=-981,dy=1] unless score proto secrets matches 1 run scoreboard players set id narrator 14

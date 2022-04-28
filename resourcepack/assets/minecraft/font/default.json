@@ -112,7 +112,7 @@
 		"type": "bitmap",
 		"file": "minecraft:icons/tnt.png",
 		"ascent": 11,
-		"height": 48,
+		"height": 78,
 		"__comment": "alt code: 26",
 		"chars": ["→"]
 	},

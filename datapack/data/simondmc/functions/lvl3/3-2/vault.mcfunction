@@ -5,7 +5,7 @@
 
 # left
 execute as @e[tag=left,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] run scoreboard players set selected vault 1
-execute as @e[tag=left,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] run clear @a player_head
+execute as @e[tag=left,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] run clear @a[tag=started] player_head
 execute as @e[tag=left,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] unless score 1 vault matches 1..9 run item replace entity @s armor.head with player_head{SkullOwner:{Id:[I;580440050,-1046134152,-1569223290,1638916550],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGViZTdlNTIxNTE2OWE2OTlhY2M2Y2VmYTdiNzNmZGIxMDhkYjg3YmI2ZGFlMjg0OWZiZTI0NzE0YjI3In19fQ=="}]}}}
 execute as @e[tag=left,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] if score 1 vault matches 1 run item replace entity @s armor.head with player_head{SkullOwner:{Id:[I;6834824,1556629267,-1634632935,115766656],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFiYzJiY2ZiMmJkMzc1OWU2YjFlODZmYzdhNzk1ODVlMTEyN2RkMzU3ZmMyMDI4OTNmOWRlMjQxYmM5ZTUzMCJ9fX0="}]}}}
 execute as @e[tag=left,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] if score 1 vault matches 2 run item replace entity @s armor.head with player_head{SkullOwner:{Id:[I;-148797389,-1393865410,-1581472972,-1106656395],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNkOWVlZWU4ODM0Njg4ODFkODM4NDhhNDZiZjMwMTI0ODVjMjNmNzU3NTNiOGZiZTg0ODczNDE0MTk4NDcifX19"}]}}}
@@ -19,7 +19,7 @@ execute as @e[tag=left,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}
 
 # middle
 execute as @e[tag=middle,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] run scoreboard players set selected vault 2
-execute as @e[tag=middle,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] run clear @a player_head
+execute as @e[tag=middle,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] run clear @a[tag=started] player_head
 execute as @e[tag=middle,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] unless score 2 vault matches 1..9 run item replace entity @s armor.head with player_head{SkullOwner:{Id:[I;580440050,-1046134152,-1569223290,1638916550],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGViZTdlNTIxNTE2OWE2OTlhY2M2Y2VmYTdiNzNmZGIxMDhkYjg3YmI2ZGFlMjg0OWZiZTI0NzE0YjI3In19fQ=="}]}}}
 execute as @e[tag=middle,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] if score 2 vault matches 1 run item replace entity @s armor.head with player_head{SkullOwner:{Id:[I;6834824,1556629267,-1634632935,115766656],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFiYzJiY2ZiMmJkMzc1OWU2YjFlODZmYzdhNzk1ODVlMTEyN2RkMzU3ZmMyMDI4OTNmOWRlMjQxYmM5ZTUzMCJ9fX0="}]}}}
 execute as @e[tag=middle,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] if score 2 vault matches 2 run item replace entity @s armor.head with player_head{SkullOwner:{Id:[I;-148797389,-1393865410,-1581472972,-1106656395],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNkOWVlZWU4ODM0Njg4ODFkODM4NDhhNDZiZjMwMTI0ODVjMjNmNzU3NTNiOGZiZTg0ODczNDE0MTk4NDcifX19"}]}}}
@@ -33,7 +33,7 @@ execute as @e[tag=middle,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}
 
 # right
 execute as @e[tag=right,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] run scoreboard players set selected vault 3
-execute as @e[tag=right,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] run clear @a player_head
+execute as @e[tag=right,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] run clear @a[tag=started] player_head
 execute as @e[tag=right,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] unless score 3 vault matches 1..9 run item replace entity @s armor.head with player_head{SkullOwner:{Id:[I;580440050,-1046134152,-1569223290,1638916550],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGViZTdlNTIxNTE2OWE2OTlhY2M2Y2VmYTdiNzNmZGIxMDhkYjg3YmI2ZGFlMjg0OWZiZTI0NzE0YjI3In19fQ=="}]}}}
 execute as @e[tag=right,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] if score 3 vault matches 1 run item replace entity @s armor.head with player_head{SkullOwner:{Id:[I;6834824,1556629267,-1634632935,115766656],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFiYzJiY2ZiMmJkMzc1OWU2YjFlODZmYzdhNzk1ODVlMTEyN2RkMzU3ZmMyMDI4OTNmOWRlMjQxYmM5ZTUzMCJ9fX0="}]}}}
 execute as @e[tag=right,nbt=!{ArmorItems:[{},{},{},{id:"minecraft:player_head"}]}] if score 3 vault matches 2 run item replace entity @s armor.head with player_head{SkullOwner:{Id:[I;-148797389,-1393865410,-1581472972,-1106656395],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNkOWVlZWU4ODM0Njg4ODFkODM4NDhhNDZiZjMwMTI0ODVjMjNmNzU3NTNiOGZiZTg0ODczNDE0MTk4NDcifX19"}]}}}
@@ -246,19 +246,19 @@ execute if score 2 vault matches 0 run scoreboard players reset 2 vault
 execute if score 3 vault matches 0 run scoreboard players reset 3 vault
 
 # win check
-execute if score 1 vault matches 8 if score 2 vault matches 4 if score 3 vault matches 6 if entity @a[nbt={Inventory:[{tag:{Eyepiece:1b}}]},x=1084,y=101,z=1027,dx=2,dy=3,dz=2] as @r[nbt={Inventory:[{tag:{Eyepiece:1b}}]},x=1084,y=101,z=1027,dx=2,dy=3,dz=2] run function simondmc:lvl3/3-2/vault_complete
-execute if score 1 vault matches 8 if score 2 vault matches 4 if score 3 vault matches 6 unless entity @a[nbt={Inventory:[{tag:{Eyepiece:1b}}]}] unless score missing vault matches 1 run tellraw @a ["",{"text":"Obtain the ","color":"green"},{"text":"Eyepiece","color":"gold"},{"text":" to finish the level.","color":"green"}]
-execute if score 1 vault matches 8 if score 2 vault matches 4 if score 3 vault matches 6 unless entity @a[nbt={Inventory:[{tag:{Eyepiece:1b}}]}] unless score missing vault matches 1 run scoreboard players set missing vault 1
+execute if score 1 vault matches 8 if score 2 vault matches 4 if score 3 vault matches 6 if entity @a[tag=started,nbt={Inventory:[{tag:{Eyepiece:1b}}]},x=1084,y=101,z=1027,dx=2,dy=3,dz=2] as @r[nbt={Inventory:[{tag:{Eyepiece:1b}}]},x=1084,y=101,z=1027,dx=2,dy=3,dz=2] run function simondmc:lvl3/3-2/vault_complete
+execute if score 1 vault matches 8 if score 2 vault matches 4 if score 3 vault matches 6 unless entity @a[tag=started,nbt={Inventory:[{tag:{Eyepiece:1b}}]}] unless score missing vault matches 1 run tellraw @a[tag=started] ["",{"text":"Obtain the ","color":"green"},{"text":"Eyepiece","color":"gold"},{"text":" to finish the level.","color":"green"}]
+execute if score 1 vault matches 8 if score 2 vault matches 4 if score 3 vault matches 6 unless entity @a[tag=started,nbt={Inventory:[{tag:{Eyepiece:1b}}]}] unless score missing vault matches 1 run scoreboard players set missing vault 1
 
 # glowing
-execute if score selected vault matches 1 as @e[tag=leftM] at @s if entity @a[distance=..5] run effect give @s glowing 10 0 true
-execute if score selected vault matches 2 as @e[tag=middleM] at @s if entity @a[distance=..5] run effect give @s glowing 10 0 true
-execute if score selected vault matches 3 as @e[tag=rightM] at @s if entity @a[distance=..5] run effect give @s glowing 10 0 true
+execute if score selected vault matches 1 as @e[tag=leftM] at @s if entity @a[tag=started,distance=..5] run effect give @s glowing 10 0 true
+execute if score selected vault matches 2 as @e[tag=middleM] at @s if entity @a[tag=started,distance=..5] run effect give @s glowing 10 0 true
+execute if score selected vault matches 3 as @e[tag=rightM] at @s if entity @a[tag=started,distance=..5] run effect give @s glowing 10 0 true
 
 execute unless score selected vault matches 1 run effect clear @e[tag=leftM] glowing
 execute unless score selected vault matches 2 run effect clear @e[tag=middleM] glowing
 execute unless score selected vault matches 3 run effect clear @e[tag=rightM] glowing
 
-execute as @e[tag=leftM] at @s unless entity @a[distance=..5] run effect clear @s glowing
-execute as @e[tag=middleM] at @s unless entity @a[distance=..5] run effect clear @s glowing
-execute as @e[tag=rightM] at @s unless entity @a[distance=..5] run effect clear @s glowing
+execute as @e[tag=leftM] at @s unless entity @a[tag=started,distance=..5] run effect clear @s glowing
+execute as @e[tag=middleM] at @s unless entity @a[tag=started,distance=..5] run effect clear @s glowing
+execute as @e[tag=rightM] at @s unless entity @a[tag=started,distance=..5] run effect clear @s glowing

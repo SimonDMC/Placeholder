@@ -6,15 +6,15 @@ execute if block -1005 121 -993 brewing_stand{Items:[{Slot:1b,id:"minecraft:poti
 execute if block -1005 121 -993 brewing_stand{Items:[{Slot:2b,id:"minecraft:potion",Count:1b,tag:{Potion:"minecraft:leaping"}}]} run item replace block -1005 121 -993 container.2 with potion{display:{Lore:['{"text":"Jump Boost (**:**)","color":"blue","italic":false}']},HideFlags:32,Potion:"minecraft:long_leaping"}
 
 # tick perfect soft-lock patch because the other map creator screamed at me i swear i dont want to do this anymore im so done with this
-execute as @a[nbt={Inventory:[{id:"minecraft:potion",tag:{Potion:"minecraft:leaping"}}]}] run give @s potion{display:{Lore:['{"text":"Jump Boost (**:**)","color":"blue","italic":false}']},HideFlags:32,Potion:"minecraft:long_leaping"}
-execute as @a[nbt={Inventory:[{id:"minecraft:potion",tag:{Potion:"minecraft:leaping"}}]}] run clear @s potion{Potion:"minecraft:leaping"}
+execute as @a[tag=started,nbt={Inventory:[{id:"minecraft:potion",tag:{Potion:"minecraft:leaping"}}]}] run give @s potion{display:{Lore:['{"text":"Jump Boost (**:**)","color":"blue","italic":false}']},HideFlags:32,Potion:"minecraft:long_leaping"}
+execute as @a[tag=started,nbt={Inventory:[{id:"minecraft:potion",tag:{Potion:"minecraft:leaping"}}]}] run clear @s potion{Potion:"minecraft:leaping"}
 
 # blaze powder lock
-clear @a[x=-1003,y=120,z=-992,distance=..7] blaze_powder
+clear @a[tag=started,x=-1003,y=120,z=-992,distance=..7] blaze_powder
 item replace block -1005 121 -993 container.4 with blaze_powder
 
 # continuous jump boost give
-execute if score jump 4 matches 1 run effect give @a jump_boost 1000000 1
+execute if score jump 4 matches 1 run effect give @a[tag=started] jump_boost 1000000 1
 
 # brewing stand speed-up
 execute store result score brewing 4 run data get block -1005 121 -993 BrewTime
@@ -24,11 +24,11 @@ execute store result block -1005 121 -993 BrewTime short 1 run scoreboard player
 scoreboard players set SPEEDUP 4 10
 
 # remove bottle
-execute if score jump 4 matches 1 run clear @a glass_bottle
+execute if score jump 4 matches 1 run clear @a[tag=started] glass_bottle
 
 # cauldron soft-lock (:troll:)
 execute if block -1002 122 -975 cauldron run summon chicken -1001.5 122.5 -974.5 {Invulnerable:1b,Passengers:[{id:"minecraft:chicken",Invulnerable:1b,CustomName:'{"text":"chicken of shame"}'}]}
-execute if block -1002 122 -975 cauldron run advancement grant @a only simondmc:chicken
+execute if block -1002 122 -975 cauldron run advancement grant @a[tag=started] only simondmc:chicken
 execute if block -1002 122 -975 cauldron run setblock -1002 122 -975 water_cauldron[level=3]
 kill @e[type=item,nbt={Item:{id:"minecraft:egg"}}]
 

@@ -1,1 +1,1 @@
-#execute as @a if predicate simondmc:lvl2/lever_lock run give @s stick
+#execute as @a[tag=started] if predicate simondmc:lvl2/lever_lock run give @s stick

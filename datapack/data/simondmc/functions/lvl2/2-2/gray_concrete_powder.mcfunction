@@ -1,12 +1,12 @@
 # ticking function, handles all things related to gray concrete powder
 
 # crafting
-execute as @a if score @s gray_concrete_powder matches 1 run clear @s budding_amethyst
-execute as @a if score @s gray_concrete_powder matches 1 run give @s soul_soil{CanPlaceOn:["minecraft:tuff","piston"]}
+execute as @a[tag=started] if score @s gray_concrete_powder matches 1 run clear @s budding_amethyst
+execute as @a[tag=started] if score @s gray_concrete_powder matches 1 run give @s soul_soil{CanPlaceOn:["minecraft:tuff","piston"]}
 # narrator line
-execute as @a if score @s gray_concrete_powder matches 1 run scoreboard players set id narrator 6
-execute as @a if score @s gray_concrete_powder matches 1 run scoreboard players set crafted gray_concrete_powder 1
-execute as @a if score @s gray_concrete_powder matches 1 run scoreboard players reset @s gray_concrete_powder
+execute as @a[tag=started] if score @s gray_concrete_powder matches 1 run scoreboard players set id narrator 6
+execute as @a[tag=started] if score @s gray_concrete_powder matches 1 run scoreboard players set crafted gray_concrete_powder 1
+execute as @a[tag=started] if score @s gray_concrete_powder matches 1 run scoreboard players reset @s gray_concrete_powder
 
 # dropped/broken item conversion
 execute as @e[type=item,nbt={Item:{id:"minecraft:gray_concrete_powder"}}] run data merge entity @s {Item:{id:"soul_soil",tag:{CanPlaceOn:["tuff","piston"]}}}
@@ -29,9 +29,9 @@ execute if block 26 105 55 gray_concrete run setblock 27 107 55 air
 execute if block 26 105 55 gray_concrete run setblock 28 107 56 air
 
 # replace soil with powder
-execute as @a if score @s soul_soil matches 1..100 run scoreboard players add global soil_timer 1
-execute if score global soil_timer matches 10 at @a run fill ~-15 ~-15 ~-15 ~15 ~15 ~15 gray_concrete_powder replace soul_soil
-execute if score global soil_timer matches 10 run scoreboard players reset @a soul_soil
+execute as @a[tag=started] if score @s soul_soil matches 1..100 run scoreboard players add global soil_timer 1
+execute if score global soil_timer matches 10 at @a[tag=started] run fill ~-15 ~-15 ~-15 ~15 ~15 ~15 gray_concrete_powder replace soul_soil
+execute if score global soil_timer matches 10 run scoreboard players reset @a[tag=started] soul_soil
 execute if score global soil_timer matches 10 run scoreboard players reset global soil_timer
 
 # visibility of dropped item after breaking (so it doesnt get stuck in the sawblade)

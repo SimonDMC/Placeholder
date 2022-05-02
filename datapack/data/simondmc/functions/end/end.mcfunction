@@ -23,27 +23,27 @@ execute as @e[tag=end] run data merge entity @s {CustomNameVisible:1b}
 scoreboard players set global end 1
 
 # clear everything except secret armor
-clear @a bubble_coral
-clear @a iron_helmet
-clear @a feather
-clear @a iron_hoe
-clear @a diamond_axe
-clear @a trident
-clear @a moss_block
+clear @a[tag=started] bubble_coral
+clear @a[tag=started] iron_helmet
+clear @a[tag=started] feather
+clear @a[tag=started] iron_hoe
+clear @a[tag=started] diamond_axe
+clear @a[tag=started] trident
+clear @a[tag=started] moss_block
 
 # title and sound
-execute as @a at @s run playsound ui.toast.challenge_complete master @s
-title @a times 20 100 20
-title @a title {"text":"Placeholder","color":"#B79312"}
-title @a subtitle {"text":"Thanks for playing.","color":"gray"}
+execute as @a[tag=started] at @s run playsound ui.toast.challenge_complete master @s
+title @a[tag=started] times 20 100 20
+title @a[tag=started] title {"text":"Placeholder","color":"#B79312"}
+title @a[tag=started] subtitle {"text":"Thanks for playing.","color":"gray"}
 
 # more config stuff
-tag @a remove lvl3
-tag @a remove ingame
-clear @a gray_candle
-clear @a lime_candle
+tag @a[tag=started] remove lvl3
+tag @a[tag=started] remove ingame
+clear @a[tag=started] gray_candle
+clear @a[tag=started] lime_candle
 scoreboard players reset global hint
 kill @e[tag=glower]
 
 # tp everyone to person who went in
-execute if score global multiplayer matches 2.. run tp @a @s
+execute if score global multiplayer matches 2.. run tp @a[tag=started] @s

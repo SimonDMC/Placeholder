@@ -1,8 +1,8 @@
 # ticking function, controlls sweet berries and composter
 
 # poll together berry clicks
-scoreboard players operation global berries += @a berries
-scoreboard players reset @a berries
+scoreboard players operation global berries += @a[tag=started] berries
+scoreboard players reset @a[tag=started] berries
 
 # predictable composter
 execute if score global berries matches 1 run setblock 1075 101 1043 composter[level=0]

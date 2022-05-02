@@ -26,3 +26,5 @@ advancement grant @s only simondmc:root
 advancement grant @s only simondmc:util/show_all
 # reset oob bypass
 scoreboard players reset oob intro
+# spectator trigger
+scoreboard players enable @s spectator

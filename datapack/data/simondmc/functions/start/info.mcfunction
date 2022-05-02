@@ -12,7 +12,8 @@ execute if score info intro matches 41 run tellraw @a ["",{"text":">","color":"g
 execute if score info intro matches 61 run tellraw @a ["",{"text":">","color":"green"},{"text":" Press ","color":"yellow"},{"keybind":"key.swapOffhand","color":"aqua","bold":true},{"text":" at any point for a clue","color":"yellow"}]
 execute if score info intro matches 81 run tellraw @a ["",{"text":">","color":"green"},{"text":" A full walkthrough is available at ","color":"yellow"},{"text":"/trigger walkthrough","color":"green"}]
 execute if score info intro matches 121 run tellraw @a ["",{"text":">","color":"green"},{"text":" If you find a bug, please report it using ","color":"yellow"},{"text":"/trigger bug","color":"green"}]
-execute if score info intro matches 201 run tellraw @a ["",{"text":">","color":"green"},{"text":" Adjust ","color":"yellow"},{"text":"Voice Acting","bold":true,"color":"light_purple"},{"text":" (narrator) in Options > Music & Sounds","color":"yellow"}]
-execute if score info intro matches 241 run tellraw @a ["",{"text":">","color":"green"},{"text":" Don't worry about getting stuck and having to reinstall the map; countless systems have been put in place to prevent softlocks.","color":"yellow"}]
-execute if score info intro matches 301 run scoreboard players reset t_info intro
-execute if score info intro matches 301 run scoreboard players reset info intro
+execute if score info intro matches 161 run tellraw @a ["",{"text":">","color":"green"},{"text":" To play as a spectator use ","color":"yellow"},{"text":"/trigger spectator","color":"green"}]
+execute if score info intro matches 241 run tellraw @a ["",{"text":">","color":"green"},{"text":" Adjust ","color":"yellow"},{"text":"Voice Acting","bold":true,"color":"light_purple"},{"text":" (narrator) in Options > Music & Sounds","color":"yellow"}]
+execute if score info intro matches 281 run tellraw @a ["",{"text":">","color":"green"},{"text":" Don't worry about getting stuck and having to reinstall the map; countless systems have been put in place to prevent softlocks.","color":"yellow"}]
+execute if score info intro matches 341 run scoreboard players reset t_info intro
+execute if score info intro matches 341 run scoreboard players reset info intro

@@ -24,7 +24,7 @@ tag @r[tag=!p1,tag=!p2] add p3
 tag @r[tag=!p1,tag=!p2,tag=!p3] add p4
 tag @r[tag=!p1,tag=!p2,tag=!p3,tag=!p4] add p5
 tag @r[tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5] add p6
-execute if entity @a[tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5,tag=!p6] run tellraw @a {"text": "This map supports up to 6 players, and will not work properly with more.","bold": true,"color": "red"}
+execute if entity @a[tag=started,tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5,tag=!p6] run tellraw @a {"text": "This map supports up to 6 players, and will not work properly with more.","bold": true,"color": "red"}
 
 # call fall entity check
 function simondmc:core/summon_aecs
@@ -38,8 +38,12 @@ execute as @e[tag=start] run data merge entity @s {CustomNameVisible:0b}
 # no more starting the map :skull:
 setblock -6 86 -15 oak_wall_sign[facing=west]{Text2:'{"text":"The map has"}',Text3:'{"text":"already started!"}'} replace
 
+# no more spectating once youre in the game
+scoreboard players reset @a spectator
+
 # start var
 scoreboard players set started intro 1
+tag @a add started
 
 # narrator line
 scoreboard players set id narrator 1

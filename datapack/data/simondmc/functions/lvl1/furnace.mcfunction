@@ -9,7 +9,7 @@ execute if block 7 101 -8 furnace{Items:[{Slot:0b,id:"minecraft:oak_log"}]} unle
 execute if block 7 101 -8 furnace{Items:[{Slot:2b,id:"minecraft:charcoal"}]} run scoreboard players set global smelting_wood 2
 
 # overflow wood check
-execute if score global smelting_wood matches 2 if block 7 101 -8 furnace positioned 7 101 -8 run playsound custom.furnace master @a
+execute if score global smelting_wood matches 2 if block 7 101 -8 furnace positioned 7 101 -8 run playsound custom.furnace master @a[tag=started]
 execute if score global smelting_wood matches 2 if block 7 101 -8 furnace run setblock 7 101 -8 air destroy
 
 # bad input

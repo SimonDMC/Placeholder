@@ -13,7 +13,7 @@ data merge entity @e[type=ender_pearl,limit=1,tag=!display] {NoGravity:0b}
 
 scoreboard players reset @s carrot_on_a_stick
 scoreboard players set global paused 0
-effect clear @a slowness
+effect clear @a[tag=started] slowness
 
 # play resume sound
 execute at @s run playsound custom.resume master @s ~ ~ ~ .5 1.2

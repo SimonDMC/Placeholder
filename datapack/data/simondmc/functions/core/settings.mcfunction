@@ -56,11 +56,13 @@ scoreboard objectives add coal mined:coal_ore
 scoreboard objectives add grass_spread dummy
 scoreboard objectives add pearl_inform dummy
 scoreboard objectives add s_death deathCount
+scoreboard objectives add spectator trigger
 scoreboard objectives add morestats trigger
 scoreboard objectives add stone mined:stone
 scoreboard objectives add water_timer dummy
 scoreboard objectives add multiplayer dummy
 scoreboard objectives add leave_const dummy
+scoreboard objectives add exclamation dummy
 scoreboard objectives add soil_timer dummy
 scoreboard objectives add transition dummy
 scoreboard objectives add death deathCount

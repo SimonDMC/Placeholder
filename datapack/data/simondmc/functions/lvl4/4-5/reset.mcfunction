@@ -1,19 +1,19 @@
 # called by simondmc:lvl4/4-5/evoker, resets the micro-level
 
-playsound entity.witch.drink master @a -989 126 -999
-playsound entity.generic.drink master @a -989 126 -999
+playsound entity.witch.drink master @a[tag=started] -989 126 -999
+playsound entity.generic.drink master @a[tag=started] -989 126 -999
 effect give @e[tag=evoker] regeneration 1 0
 tp @e[tag=evoker] -989 126 -999 90 0
 scoreboard players set evoker 4 7
 setblock -989 127 -997 oak_button[face=floor,facing=east]
-clear @a tnt
-clear @a pointed_dripstone
-clear @a sweet_berries
-clear @a water_bucket
-clear @a pufferfish_bucket
-clear @a flint_and_steel
-clear @a campfire
-clear @a bucket
+clear @a[tag=started] tnt
+clear @a[tag=started] pointed_dripstone
+clear @a[tag=started] sweet_berries
+clear @a[tag=started] water_bucket
+clear @a[tag=started] pufferfish_bucket
+clear @a[tag=started] flint_and_steel
+clear @a[tag=started] campfire
+clear @a[tag=started] bucket
 give @r campfire{CanPlaceOn:["coal_block"]}
 setblock -989 126 -1001 air destroy
 clone -989 119 -1001 -989 119 -1001 -989 126 -1001

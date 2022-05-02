@@ -8,5 +8,5 @@ execute if score 7 4 matches 1 unless score 7t 4 matches 1 as @e[tag=evoker_end]
 execute if score 7 4 matches 1 run scoreboard players set 7t 4 1
 
 # open door
-execute if score 7 4 matches 1 as @a[x=-996,y=126,z=-999,dy=1] run setblock -994 124 -999 air
-execute if score 7 4 matches 1 unless entity @a[x=-996,y=126,z=-999,dy=1] run setblock -994 124 -999 redstone_block
+execute if score 7 4 matches 1 as @a[tag=started,x=-996,y=126,z=-999,dy=1] run setblock -994 124 -999 air
+execute if score 7 4 matches 1 unless entity @a[tag=started,x=-996,y=126,z=-999,dy=1] run setblock -994 124 -999 redstone_block

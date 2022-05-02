@@ -1,15 +1,15 @@
 # ticking function, makes the giant enchanting bottle work
 
 # store xp points in scoreboard
-execute as @a store result score @s xp run data get entity @s XpP 100
+execute as @a[tag=started] store result score @s xp run data get entity @s XpP 100
 
 # hacky way of once setting the player to 7 levels
-execute as @a[level=1] run scoreboard players set temp xp 1
-execute as @a[level=1] unless score global xp matches 1 run xp set @s 3 points
-execute as @a[level=1] unless score global xp matches 1 run xp set @s 5 levels
-execute as @a if score @s xp matches 1.. run scoreboard players set temp xp 1
-execute as @a if score @s xp matches 1.. unless score global xp matches 1 run xp set @s 5 levels
-execute as @a if score @s xp matches 1.. unless score global xp matches 1 run xp set @s 9 points
+execute as @a[tag=started,level=1] run scoreboard players set temp xp 1
+execute as @a[tag=started,level=1] unless score global xp matches 1 run xp set @s 3 points
+execute as @a[tag=started,level=1] unless score global xp matches 1 run xp set @s 5 levels
+execute as @a[tag=started] if score @s xp matches 1.. run scoreboard players set temp xp 1
+execute as @a[tag=started] if score @s xp matches 1.. unless score global xp matches 1 run xp set @s 5 levels
+execute as @a[tag=started] if score @s xp matches 1.. unless score global xp matches 1 run xp set @s 9 points
 execute if score temp xp matches 1 run kill @e[type=experience_orb]
 execute if score temp xp matches 1 run scoreboard players set global xp 1
 

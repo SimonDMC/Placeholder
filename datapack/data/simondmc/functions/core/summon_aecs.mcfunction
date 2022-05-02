@@ -1,4 +1,5 @@
 # called by multiple functions, makes sure the areaeffectclouds teleporting you are alive
+
 kill @e[tag=p1fall]
 kill @e[tag=p2fall]
 kill @e[tag=p3fall]

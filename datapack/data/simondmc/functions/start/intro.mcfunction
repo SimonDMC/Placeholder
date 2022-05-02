@@ -6,8 +6,8 @@ execute if score global intro matches 1.. run scoreboard players add global intr
 execute if score global intro matches 41 unless score pressed intro matches 1 run scoreboard players set t_info intro 1
 
 # wall anim
-execute if score global intro matches 41 run tag @a add ingame
-execute if score global intro matches 41 run tag @a add lvl1
+execute if score global intro matches 41 run tag @a[tag=started] add ingame
+execute if score global intro matches 41 run tag @a[tag=started] add lvl1
 execute if score global intro matches 41 run fill 2 104 2 -2 101 -2 air replace chiseled_quartz_block
 execute if score global intro matches 41 run summon falling_block 1 104 1 {BlockState:{Name:"minecraft:chiseled_quartz_block"},Time:1,Motion:[.4,.3,.2]}
 execute if score global intro matches 41 run summon falling_block 1 104 0 {BlockState:{Name:"minecraft:chiseled_quartz_block"},Time:1,Motion:[.45,.3,.1]}
@@ -42,7 +42,7 @@ execute if score global intro matches 61 as @e[tag=quartz] run data merge entity
 execute if score global intro matches 62 as @e[tag=quartz] run data merge entity @s {Pose:{Head:[182.4f,0f,0f]}}
 execute if score global intro matches 64 run scoreboard players set global grass_spread 1
 # secret guide
-execute if score global intro matches 124 run advancement grant @a only simondmc:util/guide
+execute if score global intro matches 124 run advancement grant @a[tag=started] only simondmc:util/guide
 # advancement clear
-execute if score global intro matches 125 run advancement revoke @a only simondmc:util/guide
+execute if score global intro matches 125 run advancement revoke @a[tag=started] only simondmc:util/guide
 execute if score global intro matches 125 run scoreboard players reset global intro

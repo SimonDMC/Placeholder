@@ -2,7 +2,7 @@
 
 clear @s charcoal 1
 particle smoke 9.5 101.5 22.5 .4 .4 .4 0 200 normal
-execute as @a at @s run playsound block.respawn_anchor.charge master @s
+execute as @a[tag=started] at @s run playsound block.respawn_anchor.charge master @s
 particle large_smoke 9.5 101.5 22.5 .4 .4 .4 0 20 normal
 particle flame 9.5 101.5 22.5 .4 .4 .4 0 50 normal
 scoreboard players add global crane 1

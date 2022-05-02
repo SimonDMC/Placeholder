@@ -1,13 +1,13 @@
 # ticking function, handles everything related to tnt
 
 # crafting
-execute as @a if score @s tnt matches 1 run clear @s lapis_block
-execute as @a if score @s tnt matches 1 run give @s tnt{CanPlaceOn:["minecraft:polished_deepslate"],display:{Name:'{"text":"Auto-TNT","italic":false}',Lore:['{"text":" "}','{"text":"Strong enough to","color":"gray","italic":false}','{"text":"shatter weak walls.","color":"gray","italic":false}']}}
-execute as @a if score @s tnt matches 1 run scoreboard players reset @s tnt
+execute as @a[tag=started] if score @s tnt matches 1 run clear @s lapis_block
+execute as @a[tag=started] if score @s tnt matches 1 run give @s tnt{CanPlaceOn:["minecraft:polished_deepslate"],display:{Name:'{"text":"Auto-TNT","italic":false}',Lore:['{"text":" "}','{"text":"Strong enough to","color":"gray","italic":false}','{"text":"shatter weak walls.","color":"gray","italic":false}']}}
+execute as @a[tag=started] if score @s tnt matches 1 run scoreboard players reset @s tnt
 
 # fake explosion
 execute as @e[type=tnt,nbt={Fuse:1s}] at @s run particle explosion ~ ~ ~ 1 1 1 0 10
-execute as @e[type=tnt,nbt={Fuse:1s}] at @s run playsound entity.generic.explode master @a ~ ~ ~ 1.5
+execute as @e[type=tnt,nbt={Fuse:1s}] at @s run playsound entity.generic.explode master @a[tag=started] ~ ~ ~ 1.5
 execute as @e[type=tnt,nbt={Fuse:1s},x=30,y=114,z=25,distance=..3] run scoreboard players set done tnt 1
 execute as @e[type=tnt,nbt={Fuse:1s}] unless score done tnt matches 1 run give @r tnt{CanPlaceOn:["minecraft:polished_deepslate"],display:{Name:'{"text":"Auto-TNT","italic":false}',Lore:['{"text":" "}','{"text":"Strong enough to","color":"gray","italic":false}','{"text":"shatter weak walls.","color":"gray","italic":false}']}}
 
@@ -46,13 +46,13 @@ execute unless score z tnt matches 0 run scoreboard players set moving tnt 1
 execute if score x tnt matches -10..10 if score y tnt matches -10..10 if score z tnt matches -10..10 run scoreboard players set moving tnt 0
 
 # scripted motion (also known as doing a little trolling) - singleplayer
-execute if score global multiplayer matches 1 as @a if predicate simondmc:lvl2/tnt as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run data merge entity @s {Motion:[0.0,1.1,-0.6]}
-execute if score global multiplayer matches 1 as @a if predicate simondmc:lvl2/tnt as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run tag @s add moving
+execute if score global multiplayer matches 1 as @a[tag=started] if predicate simondmc:lvl2/tnt as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run data merge entity @s {Motion:[0.0,1.1,-0.6]}
+execute if score global multiplayer matches 1 as @a[tag=started] if predicate simondmc:lvl2/tnt as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run tag @s add moving
 
 # scripted motion - multiplayer
-execute if score global multiplayer matches 2.. as @a if predicate simondmc:lvl2/tnt if entity @a[predicate=!simondmc:lvl2/tnt] as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run tellraw @a[predicate=!simondmc:lvl2/tnt] {"text": "[You're not strong enough to reel in the TNT by yourself, you need all players on the platform]","color": "gray","italic": true}
-execute if score global multiplayer matches 2.. unless entity @a[predicate=!simondmc:lvl2/tnt] as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run data merge entity @s {Motion:[0.0,1.1,-0.6]}
-execute if score global multiplayer matches 2.. unless entity @a[predicate=!simondmc:lvl2/tnt] as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run tag @s add moving
+execute if score global multiplayer matches 2.. as @a[tag=started] if predicate simondmc:lvl2/tnt if entity @a[tag=started,predicate=!simondmc:lvl2/tnt] as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run tellraw @a[tag=started,predicate=!simondmc:lvl2/tnt] {"text": "[You're not strong enough to reel in the TNT by yourself, you need all players on the platform]","color": "gray","italic": true}
+execute if score global multiplayer matches 2.. unless entity @a[tag=started,predicate=!simondmc:lvl2/tnt] as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run data merge entity @s {Motion:[0.0,1.1,-0.6]}
+execute if score global multiplayer matches 2.. unless entity @a[tag=started,predicate=!simondmc:lvl2/tnt] as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run tag @s add moving
 
 execute as @e[type=tnt,limit=1,tag=!moving,nbt={OnGround:1b}] run tag @s remove moving
 
@@ -63,7 +63,7 @@ execute if score done tnt matches 1 run fill 30 117 24 31 117 24 air destroy
 execute if score done tnt matches 1 run fill 30 114 23 31 117 23 air destroy
 execute if score done tnt matches 1 run fill 32 116 23 32 114 23 air destroy
 execute if score done tnt matches 1 run fill 29 116 23 29 117 23 air destroy
-execute if score done tnt matches 1 run playsound entity.turtle.egg_break master @a 31 115 25
+execute if score done tnt matches 1 run playsound entity.turtle.egg_break master @a[tag=started] 31 115 25
 execute if score done tnt matches 1 run scoreboard players reset done tnt
 
 # deactivate when pause on
@@ -81,5 +81,5 @@ execute as @e[type=tnt,nbt={Fuse:1s},x=38,y=106,z=35,distance=..2] run fill 38 1
 execute as @e[type=tnt,nbt={Fuse:1s}] run kill @s
 
 # get out of secret
-execute as @a[x=38,y=104,z=30,dy=1] run setblock 39 106 32 redstone_block
-execute unless entity @a[x=38,y=104,z=30,dy=1] run setblock 39 106 32 air
+execute as @a[tag=started,x=38,y=104,z=30,dy=1] run setblock 39 106 32 redstone_block
+execute unless entity @a[tag=started,x=38,y=104,z=30,dy=1] run setblock 39 106 32 air

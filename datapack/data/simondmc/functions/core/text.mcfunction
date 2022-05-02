@@ -1,8 +1,8 @@
 # ticking function, controls holograms
 
 # dynamic name visibility system
-execute as @e[tag=text] at @s if entity @a[distance=..3] run data merge entity @s {CustomNameVisible:1b}
-execute as @e[tag=text] at @s unless entity @a[distance=..3] run data merge entity @s {CustomNameVisible:0b}
+execute as @e[tag=text] at @s if entity @a[tag=started,distance=..3] run data merge entity @s {CustomNameVisible:1b}
+execute as @e[tag=text] at @s unless entity @a[tag=started,distance=..3] run data merge entity @s {CustomNameVisible:0b}
 execute as @e[type=area_effect_cloud] run data merge entity @s {Duration:2147483647}
 
 # text summoning

@@ -8,7 +8,7 @@ execute unless block -1001 121 -978 air if block -1001 122 -978 air run setblock
 
 # secret
 execute if block -1009 126 -979 polished_blackstone_button[powered=true] run setblock -1012 129 -981 minecraft:iron_trapdoor[facing=east]
-execute if block -1009 126 -979 polished_blackstone_button[powered=true] run playsound block.iron_trapdoor.close master @a[tag=started] -1012 129 -981 1
+execute if block -1009 126 -979 polished_blackstone_button[powered=true] run playsound block.iron_trapdoor.close master @a -1012 129 -981 1
 execute if block -1009 126 -979 polished_blackstone_button[powered=true] run setblock -1009 126 -979 air destroy
 execute unless block -1013 128 -981 air if block -1013 129 -981 air run setblock -1013 129 -981 birch_button[face=floor]
 

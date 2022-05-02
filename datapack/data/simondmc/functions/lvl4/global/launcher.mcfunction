@@ -13,7 +13,7 @@ execute as @a[tag=started] if score @s clicked matches 1.. as @s[nbt={SelectedIt
 
 # mega launch
 execute if block -999 101 -999 minecraft:birch_button[powered=true] if score launcher 4 matches 1 as @a[tag=started,x=-1001,y=101,z=-1001,dx=4,dz=4] at @s if block ~ ~-.1 ~ slime_block run effect give @s levitation 1 16 true
-execute if block -999 101 -999 minecraft:birch_button[powered=true] if score launcher 4 matches 1 as @a[tag=started,x=-1001,y=101,z=-1001,dx=4,dz=4] at @s if block ~ ~-.1 ~ slime_block run playsound custom.launch master @s
+execute if block -999 101 -999 minecraft:birch_button[powered=true] if score launcher 4 matches 1 as @a[x=-1001,y=101,z=-1001,dx=4,dz=4] at @s if block ~ ~-.1 ~ slime_block run playsound custom.launch master @s
 execute if block -999 101 -999 minecraft:birch_button[powered=true] if score launcher 4 matches 1 as @a[tag=started,x=-1001,y=101,z=-1001,dx=4,dz=4] at @s if block ~ ~-.1 ~ slime_block run schedule function simondmc:lvl4/global/shut_up 1s
 execute if block -999 101 -999 minecraft:birch_button[powered=true] if score launcher 4 matches 1 as @a[tag=started,x=-1001,y=101,z=-1001,dx=4,dz=4] at @s if block ~ ~-.1 ~ slime_block run recipe give @a[tag=started] glass_bottle
 

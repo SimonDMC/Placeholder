@@ -14,13 +14,13 @@ data merge entity @e[type=ender_pearl,limit=1,tag=!display] {NoGravity:1b}
 
 scoreboard players reset @s carrot_on_a_stick
 scoreboard players set global paused 1
-effect give @a[tag=started] slowness 1000000 1 true
+effect give @a slowness 1000000 1 true
 
 # save fuse of tnt
 execute as @e[type=tnt,tag=!display] store result score fuse tnt_timer run data get entity @s Fuse
 
 # stop hissing sound
-stopsound @a[tag=started] block entity.tnt.primed
+stopsound @a block entity.tnt.primed
 
 # play pause sound
-execute at @s run playsound custom.pause master @s ~ ~ ~ .5 1.5
+execute as @a at @s run playsound custom.pause master @s ~ ~ ~ .5 1.5

@@ -1,6 +1,6 @@
 # ticking function, makes sure no flower pots can be interacted with
 
-clear @a[tag=started,gamemode=adventure] #flowers
+clear @a[gamemode=adventure] #flowers
 
 setblock -7 102 -9 minecraft:potted_cornflower
 setblock 1020 104 1034 minecraft:potted_orange_tulip

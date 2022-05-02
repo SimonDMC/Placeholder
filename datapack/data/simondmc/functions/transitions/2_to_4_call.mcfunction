@@ -1,6 +1,6 @@
 # called by simondmc:transitions/2_to_4, does some stuff related to 2-4 transition (check readme for info on why 2 to 4 and 4 to 3)
 
-effect clear @a[tag=started] slowness
+effect clear @a slowness
 clear @a[tag=started] carrot_on_a_stick
 clear @a[tag=started] fishing_rod
 clear @a[tag=started] golden_shovel

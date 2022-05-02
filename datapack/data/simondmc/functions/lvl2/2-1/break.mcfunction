@@ -6,6 +6,6 @@ fill 15 102 53 14 102 50 air destroy
 fill 16 102 52 16 102 50 air destroy
 fill 18 102 51 17 102 49 air destroy
 fill 18 100 50 18 101 50 air destroy
-playsound entity.turtle.egg_break master @a[tag=started] 15 102 52
+playsound entity.turtle.egg_break master @a 15 102 52
 # narrator line
 scoreboard players set id narrator 5

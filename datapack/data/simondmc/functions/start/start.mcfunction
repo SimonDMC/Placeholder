@@ -15,7 +15,7 @@ spawnpoint @a 0 101 0
 clear @a
 
 # hacky way to get the amount of players but hey it works
-execute as @a run scoreboard players add global multiplayer 1
+execute as @a[tag=!spec] run scoreboard players add global multiplayer 1
 
 # set up anti-fall system
 tag @r add p1
@@ -24,7 +24,7 @@ tag @r[tag=!p1,tag=!p2] add p3
 tag @r[tag=!p1,tag=!p2,tag=!p3] add p4
 tag @r[tag=!p1,tag=!p2,tag=!p3,tag=!p4] add p5
 tag @r[tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5] add p6
-execute if entity @a[tag=started,tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5,tag=!p6] run tellraw @a {"text": "This map supports up to 6 players, and will not work properly with more.","bold": true,"color": "red"}
+execute if entity @a[tag=!spec,tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5,tag=!p6] run tellraw @a {"text": "This map supports up to 6 players, and will not work properly with more.","bold": true,"color": "red"}
 
 # call fall entity check
 function simondmc:core/summon_aecs

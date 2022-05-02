@@ -29,3 +29,6 @@ execute if score y exclamation matches 39 at @s run tp @s ~ ~-0.00575 ~
 
 # force entity to visually update position
 execute store result entity @s Air short 1 run time query gametime
+
+# kill exclamation mark when player gets close
+execute if entity @a[tag=started,x=1.5,y=100,z=31.5,distance=..2] run kill @s

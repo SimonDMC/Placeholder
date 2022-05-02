@@ -7,7 +7,7 @@ execute as @a[tag=started] if score @s tnt matches 1 run scoreboard players rese
 
 # fake explosion
 execute as @e[type=tnt,nbt={Fuse:1s}] at @s run particle explosion ~ ~ ~ 1 1 1 0 10
-execute as @e[type=tnt,nbt={Fuse:1s}] at @s run playsound entity.generic.explode master @a[tag=started] ~ ~ ~ 1.5
+execute as @e[type=tnt,nbt={Fuse:1s}] at @s run playsound entity.generic.explode master @a ~ ~ ~ 1.5
 execute as @e[type=tnt,nbt={Fuse:1s},x=30,y=114,z=25,distance=..3] run scoreboard players set done tnt 1
 execute as @e[type=tnt,nbt={Fuse:1s}] unless score done tnt matches 1 run give @r tnt{CanPlaceOn:["minecraft:polished_deepslate"],display:{Name:'{"text":"Auto-TNT","italic":false}',Lore:['{"text":" "}','{"text":"Strong enough to","color":"gray","italic":false}','{"text":"shatter weak walls.","color":"gray","italic":false}']}}
 
@@ -63,7 +63,7 @@ execute if score done tnt matches 1 run fill 30 117 24 31 117 24 air destroy
 execute if score done tnt matches 1 run fill 30 114 23 31 117 23 air destroy
 execute if score done tnt matches 1 run fill 32 116 23 32 114 23 air destroy
 execute if score done tnt matches 1 run fill 29 116 23 29 117 23 air destroy
-execute if score done tnt matches 1 run playsound entity.turtle.egg_break master @a[tag=started] 31 115 25
+execute if score done tnt matches 1 run playsound entity.turtle.egg_break master @a 31 115 25
 execute if score done tnt matches 1 run scoreboard players reset done tnt
 
 # deactivate when pause on

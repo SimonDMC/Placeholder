@@ -15,6 +15,6 @@
 ## pls no sue ¯\_(ツ)_/¯
 
 summon area_effect_cloud 29999999 100 27115050 {UUID:[I;1347430161,0,131072,0],CustomName:'{"translate":"of.key.zoom"}'}
-execute as 50502711-0000-0000-0002-000000000000 if entity @s[name=!"of.key.zoom"] run tellraw @a[tag=started] {"text":"\u2139 We've noticed you're using OptiFine. Please note shaders are not supported and may break the map.","color":"gold"}
+execute as 50502711-0000-0000-0002-000000000000 if entity @s[name=!"of.key.zoom"] run tellraw @a {"text":"\u2139 We've noticed you're using OptiFine. Please note shaders are not supported and may break the map.","color":"gold"}
 execute as 50502711-0000-0000-0002-000000000000 if entity @s[name=!"of.key.zoom"] run scoreboard players set optifine intro 1
 kill 50502711-0000-0000-0002-000000000000

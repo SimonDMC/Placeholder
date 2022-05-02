@@ -27,24 +27,24 @@ execute as @e[tag=rod,x=-998,y=132,z=-1017,dy=1] at @s if block ~ ~ ~.45 pink_gl
 # barrel anim
 execute if blocks -1001 128 -1018 -997 128 -1012 -1001 131 -1018 masked unless score bAnim 4 matches 0 run scoreboard players add bAnim 4 1
 execute if score bAnim 4 matches 1 run clone -1003 134 -1015 -1003 134 -1015 -999 136 -1015
-execute if score bAnim 4 matches 1 as @a[tag=started] at @s run playsound block.chain.place master @s ~ ~ ~ 1 0.8
-execute if score bAnim 4 matches 1 as @a[tag=started] at @s run playsound entity.experience_orb.pickup master @s
+execute if score bAnim 4 matches 1 as @a at @s run playsound block.chain.place master @s ~ ~ ~ 1 0.8
+execute if score bAnim 4 matches 1 as @a at @s run playsound entity.experience_orb.pickup master @s
 execute if score bAnim 4 matches 1 run clear @a[tag=started] shears
 execute if score bAnim 4 matches 1 run summon item -1012 138 -999 {Tags:["paper"],CustomName:'{"text":"Paper"}',Item:{id:"minecraft:paper",Count:1b}}
 execute if score bAnim 4 matches 21 run clone -999 136 -1015 -999 136 -1015 -999 135 -1015
 execute if score bAnim 4 matches 21 run setblock -999 136 -1015 chain
-execute if score bAnim 4 matches 21 as @a[tag=started] at @s run playsound block.chain.break master @s ~ ~ ~ 1 0.8
+execute if score bAnim 4 matches 21 as @a at @s run playsound block.chain.break master @s ~ ~ ~ 1 0.8
 execute if score bAnim 4 matches 41 run clone -999 135 -1015 -999 135 -1015 -999 134 -1015
 execute if score bAnim 4 matches 41 run setblock -999 135 -1015 chain
-execute if score bAnim 4 matches 41 as @a[tag=started] at @s run playsound block.chain.place master @s ~ ~ ~ 1 0.8
+execute if score bAnim 4 matches 41 as @a at @s run playsound block.chain.place master @s ~ ~ ~ 1 0.8
 execute if score bAnim 4 matches 41 run scoreboard players set bAnim 4 0
 
 # ladder anim
 execute if block -996 132 -999 ladder unless score lAnim 4 matches 0 run scoreboard players add lAnim 4 1
 execute if score lAnim 4 matches 21 run setblock -996 133 -999 ladder[facing=west]
-execute if score lAnim 4 matches 21 run playsound block.bamboo.place master @a[tag=started] -996 133 -999
+execute if score lAnim 4 matches 21 run playsound block.bamboo.place master @a -996 133 -999
 execute if score lAnim 4 matches 41 run setblock -996 134 -999 ladder[facing=west]
-execute if score lAnim 4 matches 41 run playsound block.bamboo.place master @a[tag=started] -996 134 -999
+execute if score lAnim 4 matches 41 run playsound block.bamboo.place master @a -996 134 -999
 execute if score lAnim 4 matches 41 run scoreboard players set lAnim 4 0
 
 # crafting

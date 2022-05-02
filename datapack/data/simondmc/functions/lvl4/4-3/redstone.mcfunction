@@ -23,27 +23,27 @@ execute if block -1014 119 -1000 redstone_wire[power=10] run setblock -1014 118 
 execute if block -1014 119 -1000 redstone_wire[power=0] run setblock -1014 118 -999 redstone_lamp[lit=false]
 
 # close trapdoor
-execute if block -1015 114 -998 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a[tag=started] -1017.81 115.43 -998.36 1
+execute if block -1015 114 -998 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a -1017.81 115.43 -998.36 1
 execute if block -1015 114 -998 lever[powered=false] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=true]
-execute if block -1015 114 -999 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a[tag=started] -1017.81 115.43 -998.36 1
+execute if block -1015 114 -999 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a -1017.81 115.43 -998.36 1
 execute if block -1015 114 -999 lever[powered=false] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=true]
-execute if block -1014 114 -999 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a[tag=started] -1017.81 115.43 -998.36 1
+execute if block -1014 114 -999 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a -1017.81 115.43 -998.36 1
 execute if block -1014 114 -999 lever[powered=false] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=true]
-execute if block -1013 114 -999 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a[tag=started] -1017.81 115.43 -998.36 1
+execute if block -1013 114 -999 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a -1017.81 115.43 -998.36 1
 execute if block -1013 114 -999 lever[powered=false] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=true]
-execute if block -1013 114 -1000 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a[tag=started] -1017.81 115.43 -998.36 1
+execute if block -1013 114 -1000 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a -1017.81 115.43 -998.36 1
 execute if block -1013 114 -1000 lever[powered=false] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=true]
-execute if block -1013 114 -998 lever[powered=true] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a[tag=started] -1017.81 115.43 -998.36 1
+execute if block -1013 114 -998 lever[powered=true] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a -1017.81 115.43 -998.36 1
 execute if block -1013 114 -998 lever[powered=true] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=true]
-execute if block -1014 114 -998 lever[powered=true] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a[tag=started] -1017.81 115.43 -998.36 1
+execute if block -1014 114 -998 lever[powered=true] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a -1017.81 115.43 -998.36 1
 execute if block -1014 114 -998 lever[powered=true] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=true]
-execute if block -1015 114 -1000 lever[powered=true] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a[tag=started] -1017.81 115.43 -998.36 1
+execute if block -1015 114 -1000 lever[powered=true] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a -1017.81 115.43 -998.36 1
 execute if block -1015 114 -1000 lever[powered=true] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=true]
-execute if block -1014 114 -1000 lever[powered=true] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a[tag=started] -1017.81 115.43 -998.36 1
+execute if block -1014 114 -1000 lever[powered=true] unless block -1018 115 -999 iron_trapdoor[facing=east,open=true] run playsound block.iron_trapdoor.close master @a -1017.81 115.43 -998.36 1
 execute if block -1014 114 -1000 lever[powered=true] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=true]
 
 # open trapdoor
-execute if block -1015 114 -998 lever[powered=true] if block -1015 114 -999 lever[powered=true] if block -1014 114 -999 lever[powered=true] if block -1013 114 -999 lever[powered=true] if block -1013 114 -1000 lever[powered=true] if block -1013 114 -998 lever[powered=false] if block -1014 114 -998 lever[powered=false] if block -1015 114 -1000 lever[powered=false] if block -1014 114 -1000 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=false] run playsound block.iron_trapdoor.open master @a[tag=started] -1017.81 115.43 -998.36 1
+execute if block -1015 114 -998 lever[powered=true] if block -1015 114 -999 lever[powered=true] if block -1014 114 -999 lever[powered=true] if block -1013 114 -999 lever[powered=true] if block -1013 114 -1000 lever[powered=true] if block -1013 114 -998 lever[powered=false] if block -1014 114 -998 lever[powered=false] if block -1015 114 -1000 lever[powered=false] if block -1014 114 -1000 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=false] run playsound block.iron_trapdoor.open master @a -1017.81 115.43 -998.36 1
 execute if block -1015 114 -998 lever[powered=true] if block -1015 114 -999 lever[powered=true] if block -1014 114 -999 lever[powered=true] if block -1013 114 -999 lever[powered=true] if block -1013 114 -1000 lever[powered=true] if block -1013 114 -998 lever[powered=false] if block -1014 114 -998 lever[powered=false] if block -1015 114 -1000 lever[powered=false] if block -1014 114 -1000 lever[powered=false] unless block -1018 115 -999 iron_trapdoor[facing=east,open=false] as @a[tag=started] at @s run playsound entity.experience_orb.pickup master @s
 execute if block -1015 114 -998 lever[powered=true] if block -1015 114 -999 lever[powered=true] if block -1014 114 -999 lever[powered=true] if block -1013 114 -999 lever[powered=true] if block -1013 114 -1000 lever[powered=true] if block -1013 114 -998 lever[powered=false] if block -1014 114 -998 lever[powered=false] if block -1015 114 -1000 lever[powered=false] if block -1014 114 -1000 lever[powered=false] run setblock -1018 115 -999 iron_trapdoor[facing=east,open=false]
 

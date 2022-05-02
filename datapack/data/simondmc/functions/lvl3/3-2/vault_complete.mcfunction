@@ -1,6 +1,6 @@
 # called by simondmc:lvl3/3-2/vault, activates after entering the vault code correctly
 
-execute as @a[tag=started] at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 1 0.7
+execute as @a at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 1 0.7
 gamerule doTileDrops false
 fill 1086 104 1027 1087 101 1029 air destroy
 kill @e[tag=left]

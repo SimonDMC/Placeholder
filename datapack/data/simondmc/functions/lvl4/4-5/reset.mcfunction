@@ -1,7 +1,7 @@
 # called by simondmc:lvl4/4-5/evoker, resets the micro-level
 
-playsound entity.witch.drink master @a[tag=started] -989 126 -999
-playsound entity.generic.drink master @a[tag=started] -989 126 -999
+playsound entity.witch.drink master @a -989 126 -999
+playsound entity.generic.drink master @a -989 126 -999
 effect give @e[tag=evoker] regeneration 1 0
 tp @e[tag=evoker] -989 126 -999 90 0
 scoreboard players set evoker 4 7

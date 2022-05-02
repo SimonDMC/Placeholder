@@ -30,4 +30,4 @@ setblock -999 132 -1010 birch_button[facing=south]
 scoreboard players set laser 4 1
 
 # playsound
-execute as @a[tag=started] at @s run playsound block.beacon.ambient master @s
+execute as @a at @s run playsound block.beacon.ambient master @s

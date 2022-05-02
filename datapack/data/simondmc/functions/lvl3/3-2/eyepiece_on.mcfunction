@@ -1,6 +1,6 @@
 # called by simondmc:lvl3/3-2/eyepiece, activates the eyepiece vision and stuff around it
 
-effect give @a[tag=started] slowness 1000000 10 true
+effect give @a slowness 1000000 10 true
 
 # green
 setblock 1056 99 1039 lime_glazed_terracotta

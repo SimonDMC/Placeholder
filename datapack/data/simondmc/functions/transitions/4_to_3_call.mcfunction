@@ -1,6 +1,6 @@
 # called by simondmc:transitions/4_to_3, does some stuff related to 4-3 transition
 
-effect clear @a[tag=started] slowness
+effect clear @a slowness
 clear @a[tag=started] filled_map
 xp set @a[tag=started] 0
 xp set @a[tag=started] 0 levels

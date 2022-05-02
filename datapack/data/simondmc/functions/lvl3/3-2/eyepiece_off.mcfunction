@@ -1,6 +1,6 @@
 # called by simondmc:lvl3/3-2/eyepiece, deactivates the eyepiece vision and stuff around it
 
-effect clear @a[tag=started] slowness
+effect clear @a slowness
 
 # remove eyepiece glow blocks
 kill @e[tag=eyepieceB]

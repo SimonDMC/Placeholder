@@ -19,7 +19,7 @@ execute if entity @a[tag=started,predicate=simondmc:lvl4/evoker] run data modify
 execute if entity @a[tag=started,predicate=simondmc:lvl4/evoker] run data modify entity @e[type=tnt,limit=1] Motion[2] set value 0.0000
 # mostly stolen from 2-2
 execute as @e[type=tnt,nbt={Fuse:1s}] at @s run particle explosion ~ ~ ~ 1 1 1 0 10
-execute as @e[type=tnt,nbt={Fuse:1s}] at @s run playsound entity.generic.explode master @a[tag=started] ~ ~ ~ 1.5
+execute as @e[type=tnt,nbt={Fuse:1s}] at @s run playsound entity.generic.explode master @a ~ ~ ~ 1.5
 execute as @e[type=tnt,nbt={Fuse:1s}] if entity @a[tag=started,predicate=simondmc:lvl4/evoker] run effect give @e[tag=evoker] instant_damage
 execute as @e[type=tnt,nbt={Fuse:1s}] if entity @a[tag=started,predicate=simondmc:lvl4/evoker] run scoreboard players remove evoker 4 1
 execute as @e[type=tnt,nbt={Fuse:1s}] if entity @a[tag=started,predicate=simondmc:lvl4/evoker] run setblock -989 125 -999 coal_block
@@ -78,7 +78,7 @@ execute if score fire 4 matches 10 run effect give @e[tag=evoker] instant_damage
 execute if score fire 4 matches 10 run scoreboard players remove evoker 4 1
 execute if score fire 4 matches 20 as @e[tag=evoker] at @s run tp @s ~ ~ ~ ~ ~30
 execute if score fire 4 matches 30 run setblock -989 126 -999 air
-execute if score fire 4 matches 30 positioned -989 126 -999 run playsound minecraft:block.fire.extinguish master @a[tag=started] ~ ~ ~ 0.5
+execute if score fire 4 matches 30 positioned -989 126 -999 run playsound minecraft:block.fire.extinguish master @a ~ ~ ~ 0.5
 execute if score fire 4 matches 40 as @e[tag=evoker] at @s run tp @s ~ ~ ~ ~ ~-30
 execute if score fire 4 matches 40 run scoreboard players reset t_fire 4
 execute if score fire 4 matches 40 run scoreboard players reset fire 4

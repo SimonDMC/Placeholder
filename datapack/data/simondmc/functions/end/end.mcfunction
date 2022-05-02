@@ -32,10 +32,10 @@ clear @a[tag=started] trident
 clear @a[tag=started] moss_block
 
 # title and sound
-execute as @a[tag=started] at @s run playsound ui.toast.challenge_complete master @s
-title @a[tag=started] times 20 100 20
-title @a[tag=started] title {"text":"Placeholder","color":"#B79312"}
-title @a[tag=started] subtitle {"text":"Thanks for playing.","color":"gray"}
+execute as @a at @s run playsound ui.toast.challenge_complete master @s
+title @a times 20 100 20
+title @a title {"text":"Placeholder","color":"#B79312"}
+title @a subtitle {"text":"Thanks for playing.","color":"gray"}
 
 # more config stuff
 tag @a[tag=started] remove lvl3

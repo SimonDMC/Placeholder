@@ -44,14 +44,14 @@ execute at @e[tag=both] run particle dust_color_transition 0.769 0.435 0.000 1 0
 execute at @e[tag=both] run particle dust_color_transition 0.000 1.000 0.000 1 0.000 0.349 0.000 ~-.5 ~-1.2 ~ .17 0 .17 0 4 normal
 
 # credits
-execute as @a[tag=started,x=1094,y=102,z=1034,distance=..3,tag=!endcredits] at @s run playsound minecraft:entity.experience_orb.pickup master @s
-execute as @a[tag=started,x=1094,y=102,z=1034,distance=..3,tag=!endcredits] run tellraw @s ["\n",{"text":"Coding, Models & Narration: ","color":"yellow"},{"text":"SimonDMC","color":"gold"},{"text":"\n"},{"text":"> simondmc.com","color":"green","clickEvent":{"action":"open_url","value":"https://simondmc.com"}},{"text":"\n"},{"text":"Building, Story & Game Design: ","color":"yellow"},{"text":"EurekaX","color":"gold"},{"text":"\n"},{"text":"> youtube.com/EurekaX","color":"red","clickEvent":{"action":"open_url","value":"https://youtube.com/EurekaX"}}]
-execute as @a[tag=started,x=1094,y=102,z=1034,distance=..3,tag=!endcredits] run tag @s add endcredits
+execute as @a[x=1094,y=102,z=1034,distance=..3,tag=!endcredits] at @s run playsound minecraft:entity.experience_orb.pickup master @s
+execute as @a[x=1094,y=102,z=1034,distance=..3,tag=!endcredits] run tellraw @s ["\n",{"text":"Coding, Models & Narration: ","color":"yellow"},{"text":"SimonDMC","color":"gold"},{"text":"\n"},{"text":"> simondmc.com","color":"green","clickEvent":{"action":"open_url","value":"https://simondmc.com"}},{"text":"\n"},{"text":"Building, Story & Game Design: ","color":"yellow"},{"text":"EurekaX","color":"gold"},{"text":"\n"},{"text":"> youtube.com/EurekaX","color":"red","clickEvent":{"action":"open_url","value":"https://youtube.com/EurekaX"}}]
+execute as @a[x=1094,y=102,z=1034,distance=..3,tag=!endcredits] run tag @s add endcredits
 
 # epilogue
 execute if block 1093 102 1024 birch_button[powered=true] run scoreboard players set id narrator 26
 execute if block 1093 102 1024 birch_button[powered=true] run setblock 1093 102 1024 birch_button[facing=south]
 
 # additional credits
-execute if block 1098 102 1031 birch_button[powered=true] run tellraw @a[tag=started] [{"text":"Playtesters:","color":"yellow"},{"text":"\n Name 1\n Name 2\n Name 3\n"},{"text":"Tools used:","color":"yellow"},{"text":"\n"},{"text":" Mod-Warnings by 5uso\n Advancement Disabler by Onnowhere","color":"white"}]
+execute if block 1098 102 1031 birch_button[powered=true] run tellraw @a [{"text":"Playtesters:","color":"yellow"},{"text":"\n> martamares","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"hmmmmmmmmmmmmmmmmmmm"}]}},{"text":"\n> 1BlockedMess","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"\"Hold on, how is this even possible\""}]}},{"text":"\n> PoldsSlippers","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"\"the hardest puzzles are easier than the easy ones\" - Name 3"}]}},{"text":"\n> BiancaSS","color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"average gay person"}]}},{"text":"\n> NotVixios","color":"white"},{"text":"\n> Pindex","color":"white"},{"text":"\nTools used:","color":"yellow"},{"text":"\n> Mod-Warnings by 5uso\n> Advancement Disabler by Onnowhere","color":"white"}]
 execute if block 1098 102 1031 birch_button[powered=true] run setblock 1098 102 1031 birch_button[facing=west]

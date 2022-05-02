@@ -1,2 +1,2 @@
 scoreboard players set oob intro 1
-tellraw @a[tag=started] "§cOOB prevention is now off."
+tellraw @a "§cOOB prevention is now off."

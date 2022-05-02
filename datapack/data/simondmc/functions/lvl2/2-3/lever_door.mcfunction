@@ -16,13 +16,13 @@ execute if score oanim lever matches 8 run setblock 35 106 38 air destroy
 execute unless score open lever matches 1 unless score canim lever matches 10.. run scoreboard players add canim lever 1
 execute if score open lever matches 1 run scoreboard players reset canim lever
 execute if score canim lever matches 2 run setblock 35 106 38 mossy_cobblestone
-execute if score canim lever matches 2 positioned 35 106 38 run playsound block.stone.place master @a[tag=started]
+execute if score canim lever matches 2 positioned 35 106 38 run playsound block.stone.place master @a
 execute if score canim lever matches 4 run setblock 35 106 37 mossy_cobblestone
-execute if score canim lever matches 4 positioned 35 106 37 run playsound block.stone.place master @a[tag=started]
+execute if score canim lever matches 4 positioned 35 106 37 run playsound block.stone.place master @a
 execute if score canim lever matches 6 run setblock 35 107 38 mossy_cobblestone
-execute if score canim lever matches 6 positioned 35 107 38 run playsound block.stone.place master @a[tag=started]
+execute if score canim lever matches 6 positioned 35 107 38 run playsound block.stone.place master @a
 execute if score canim lever matches 8 run setblock 35 107 37 cobblestone
-execute if score canim lever matches 8 positioned 35 107 37 run playsound block.stone.place master @a[tag=started]
+execute if score canim lever matches 8 positioned 35 107 37 run playsound block.stone.place master @a
 
 # lever lock (narrator line)
 execute unless score locked lever matches 1 unless score open lever matches 1 as @a[tag=started] if block 38 105 35 cracked_stone_bricks if predicate simondmc:lvl2/lever_lock run scoreboard players set id narrator 8

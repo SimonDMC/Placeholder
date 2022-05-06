@@ -38,3 +38,6 @@ execute if score lvl4_t timer matches 20 run scoreboard players add lvl4_s timer
 execute if score lvl4_t timer matches 20 run scoreboard players set lvl4_t timer 0
 execute if score lvl4_s timer matches 60 run scoreboard players add lvl4_m timer 1
 execute if score lvl4_s timer matches 60 run scoreboard players set lvl4_s timer 0
+
+# display time if speedrun mode enabled
+execute if score speedrun timer matches 1 run title @a actionbar ["",{"score":{"name":"m","objective":"timer"},"color":"gold"},{"text":"m","color":"gold"},{"score":{"name":"s","objective":"timer"},"color":"gold"},{"text":"s","color":"gold"}]

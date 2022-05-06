@@ -1,7 +1,7 @@
 # ticking function, handles everything with the evoker
 
 # bossbar handling
-execute unless score 6 4 matches 1 run bossbar set evoker players @a[tag=started,predicate=simondmc:lvl4/evoker]
+execute unless score 6 4 matches 1 run bossbar set evoker players @a[predicate=simondmc:lvl4/evoker]
 execute if score 6 4 matches 1 run bossbar set evoker players
 # set value from scoreboard
 execute store result bossbar evoker value run scoreboard players get evoker 4

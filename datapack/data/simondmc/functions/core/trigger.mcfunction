@@ -23,7 +23,7 @@ execute as @a if score @s rp matches 1.. run tellraw @s {"translate":"Click here
 execute as @a if score @s rp matches 1.. run scoreboard players reset @s rp
 
 # spectator
-execute if score started intro matches 1 as @a[tag=!spec,tag=!ingame] run scoreboard players enable @s spectator
+execute if score started intro matches 1 as @a[tag=!spec,tag=!started] run scoreboard players enable @s spectator
 
 execute as @a if score @s spectator matches 1.. run gamemode spectator @s
 execute as @a if score @s spectator matches 1.. run tag @s add spec

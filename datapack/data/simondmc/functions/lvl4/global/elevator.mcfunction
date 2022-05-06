@@ -30,6 +30,8 @@ execute if score elevator 4 matches 41 unless score totem 4 matches 2 run clone 
 execute if score elevator 4 matches 41 unless score totem 4 matches 2 run playsound block.anvil.land master @a -1004.00 104.92 -998.40 0.5 1
 execute if score elevator 4 matches 41 unless score totem 4 matches 2 run scoreboard players reset t_elevator 4
 execute if score elevator 4 matches 41 unless score totem 4 matches 2 run scoreboard players reset elevator 4
+# remove out of order sign
+execute if score elevator 4 matches 41 run setblock -1002 103 -998 air
 execute if score elevator 4 matches 41 as @a[tag=started] at @s if block ~ ~-5 ~ melon run tp @s ~ ~25.4 ~
 execute if score elevator 4 matches 41 run clone -1006 99 -1001 -1004 107 -996 -1006 97 -1001 replace move
 execute if score elevator 4 matches 41 run clone -1006 126 -1001 -1004 134 -996 -1006 124 -1001 replace move

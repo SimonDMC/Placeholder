@@ -10,6 +10,7 @@ execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.3] run scoreboard ob
 execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.3] run scoreboard objectives add 4_planks crafted:oak_planks
 execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.3] run scoreboard objectives add 4_sticks crafted:stick
 execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.3] run scoreboard objectives add 4_axe dummy
+execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.3] run advancement revoke @a only simondmc:util/jump
 execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.3] run kill @e[tag=axe]
 
 # axe custom item damage sys

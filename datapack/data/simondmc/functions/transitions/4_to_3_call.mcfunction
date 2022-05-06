@@ -22,3 +22,5 @@ team modify map nametagVisibility never
 schedule function simondmc:transitions/4_to_3_nametags 5s
 # narrator line
 schedule function simondmc:lvl3/3-1/narrator_line 6s
+# broadcast time if speedrun mode enabled
+execute if score speedrun timer matches 1 run tellraw @a ["",{"score":{"name":"lvl4_m","objective":"timer"},"color":"green"},{"text":"m","color":"green"},{"score":{"name":"lvl4_s","objective":"timer"},"color":"green"},{"text":"s","color":"green"}]

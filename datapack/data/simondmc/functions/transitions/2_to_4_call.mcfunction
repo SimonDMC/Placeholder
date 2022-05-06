@@ -25,3 +25,5 @@ summon area_effect_cloud -998.5 132.5 -1017.8 {Duration:10,Tags:["text","laser2"
 function simondmc:lvl4/global/recipes
 kill @e[type=item]
 scoreboard players reset @a[tag=started] pearl
+# broadcast time if speedrun mode enabled
+execute if score speedrun timer matches 1 run tellraw @a ["",{"score":{"name":"lvl2_m","objective":"timer"},"color":"green"},{"text":"m","color":"green"},{"score":{"name":"lvl2_s","objective":"timer"},"color":"green"},{"text":"s","color":"green"}]

@@ -20,3 +20,6 @@ spawnpoint @a[tag=started] 11 100 39 -54
 
 # narrator line
 scoreboard players set id narrator 4
+
+# broadcast time if speedrun mode enabled
+execute if score speedrun timer matches 1 run tellraw @a ["",{"score":{"name":"lvl1_m","objective":"timer"},"color":"green"},{"text":"m","color":"green"},{"score":{"name":"lvl1_s","objective":"timer"},"color":"green"},{"text":"s","color":"green"}]

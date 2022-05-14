@@ -9,6 +9,9 @@ effect give @a resistance 1000000 2 true
 execute as @e[type=item,nbt={Age:10s}] run data merge entity @s {Age:5}
 
 # join system
+execute as @a unless score @s leave matches 0.. run scoreboard players set @s leave 0
+execute as @a unless score @s leave_const matches 0.. run scoreboard players set @s leave_const 0
+
 execute as @a unless score @s leave matches 1.. run tag @s remove map
 execute as @a unless score @s leave matches 1.. run scoreboard players set @s leave_const 1
 execute as @a unless score @s leave matches 1.. run scoreboard players set @s leave 1

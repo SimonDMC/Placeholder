@@ -13,3 +13,5 @@ execute if score global crane matches 2 run clone 6 63 16 -13 79 22 -3 98 19
 execute if score global crane matches 3 run clone 6 63 26 -13 79 32 -3 98 19
 kill @e[type=item,nbt={Item:{id:"minecraft:spruce_door"}}]
 scoreboard players reset @s clicked
+# refresh hint system
+execute if score global hint matches 1 run function simondmc:core/hint/refresh_hint

@@ -7,8 +7,6 @@ clear @a[tag=started] golden_shovel
 clear @a[tag=started] water_bucket
 xp set @a[tag=started] 0
 xp set @a[tag=started] 0 levels
-scoreboard players reset global hint
-kill @e[tag=glower]
 tag @a[tag=started] add lvl4
 tag @a[tag=started] remove lvl1
 tag @a[tag=started] remove lvl2
@@ -27,3 +25,5 @@ kill @e[type=item]
 scoreboard players reset @a[tag=started] pearl
 # broadcast time if speedrun mode enabled
 execute if score speedrun timer matches 1 run tellraw @a ["",{"score":{"name":"lvl2_m","objective":"timer"},"color":"green"},{"text":"m","color":"green"},{"score":{"name":"lvl2_s","objective":"timer"},"color":"green"},{"text":"s","color":"green"}]
+# refresh hint system
+execute if score global hint matches 1 run function simondmc:core/hint/refresh_hint

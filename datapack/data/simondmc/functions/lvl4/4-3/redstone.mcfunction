@@ -81,3 +81,7 @@ execute as @a[tag=started,x=-1019,y=115,z=-999,dy=0] run tp @s -1012.98 114.00 -
 # make sure shulker cant break item frame
 execute as @a[tag=started,nbt={SelectedItem:{tag:{Sneak:1b}}}] as @e[tag=redstone_frame] run data merge entity @s {Fixed:1b}
 execute unless entity @a[tag=started,nbt={SelectedItem:{tag:{Sneak:1b}}}] as @e[tag=redstone_frame] run data merge entity @s {Fixed:0b}
+
+# combination lock text
+execute as @e[tag=combination] at @s if entity @a[distance=..5] run data merge entity @s {CustomNameVisible:1b}
+execute as @e[tag=combination] at @s unless entity @a[distance=..5] run data merge entity @s {CustomNameVisible:0b}

@@ -4,13 +4,13 @@
 execute if block -1001 122 -978 birch_button[powered=true] if block -1001 121 -978 purple_concrete_powder run setblock -1001 121 -978 air destroy
 
 # button
-execute unless block -1001 121 -978 air if block -1001 122 -978 air run setblock -1001 122 -978 birch_button[face=floor]
+execute unless block -1001 121 -978 air if block -1001 122 -978 air run setblock -1001 122 -978 birch_button[face=floor,facing=south]
 
 # secret
 execute if block -1009 126 -979 polished_blackstone_button[powered=true] run setblock -1012 129 -981 minecraft:iron_trapdoor[facing=east]
 execute if block -1009 126 -979 polished_blackstone_button[powered=true] run playsound block.iron_trapdoor.close master @a -1012 129 -981 1
 execute if block -1009 126 -979 polished_blackstone_button[powered=true] run setblock -1009 126 -979 air destroy
-execute unless block -1013 128 -981 air if block -1013 129 -981 air run setblock -1013 129 -981 birch_button[face=floor]
+execute unless block -1013 128 -981 air if block -1013 129 -981 air run setblock -1013 129 -981 birch_button[face=floor,facing=west]
 
 # door reopen
 execute if block -1007 128 -983 air run setblock -1005 125 -978 air
@@ -62,3 +62,6 @@ execute unless score entered_p1 4 matches 1 if entity @a[tag=started,x=-999,y=12
 # enter prototype 2 (narrator line)
 execute unless score entered_p2 4 matches 1 if entity @a[tag=started,x=-1004,y=128,z=-978,dy=1] run scoreboard players set id narrator 13
 execute unless score entered_p2 4 matches 1 if entity @a[tag=started,x=-1004,y=128,z=-978,dy=1] run scoreboard players set entered_p2 4 1
+
+# elevator button in secret
+execute if block -1021 132 -983 air run setblock -1021 132 -983 birch_button[facing=west,face=floor]

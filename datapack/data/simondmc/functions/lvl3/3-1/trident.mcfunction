@@ -17,4 +17,6 @@ kill @e[type=trident]
 execute as @a[tag=started] if predicate simondmc:lvl3/3-2 at @s if block ~ ~-.1 ~ grass_block unless score tp trident matches 1 if score global multiplayer matches 2.. run tp @a[tag=started] @s
 # narrator line
 execute as @a[tag=started] if predicate simondmc:lvl3/3-2 at @s if block ~ ~-.1 ~ grass_block unless score tp trident matches 1 run scoreboard players set id narrator 19
+# refresh hint system
+execute as @a[tag=started] if predicate simondmc:lvl3/3-2 at @s if block ~ ~-.1 ~ grass_block unless score tp trident matches 1 if score global hint matches 1 run function simondmc:core/hint/refresh_hint
 execute as @a[tag=started] if predicate simondmc:lvl3/3-2 at @s if block ~ ~-.1 ~ grass_block unless score tp trident matches 1 run scoreboard players set tp trident 1

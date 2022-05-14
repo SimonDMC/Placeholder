@@ -1,9 +1,9 @@
 # ticking function, handles everything axe-related
 
 # pickup axe
-execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.3] run give @s iron_axe{CanDestroy:["minecraft:oak_wood","minecraft:campfire"],HideFlags:2,Enchantments:[{id:"minecraft:efficiency",lvl:2s}]} 1
-execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.3] run playsound entity.item.pickup master @s ~ ~ ~ 0.5
-execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.3] run kill @e[tag=axe]
+execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.5] run give @s iron_axe{CanDestroy:["minecraft:oak_wood","minecraft:campfire"],HideFlags:2,Enchantments:[{id:"minecraft:efficiency",lvl:2s}]} 1
+execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.5] run playsound entity.item.pickup master @s ~ ~ ~ 0.5
+execute as @e[tag=axe] at @s as @a[tag=started,distance=..1.5] run kill @e[tag=axe]
 
 # teleports oak log to nearest player after 5 seconds of being dropped
 scoreboard players add @e[type=item,nbt={Item:{id:"minecraft:oak_log"}}] item_time 1

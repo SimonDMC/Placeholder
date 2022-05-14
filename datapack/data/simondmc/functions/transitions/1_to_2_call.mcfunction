@@ -7,19 +7,13 @@ execute if score global multiplayer matches 2.. run tp @a[tag=started] @s
 tag @a[tag=started] add lvl2
 tag @a[tag=started] remove lvl1
 execute unless entity @e[tag=text,x=54,y=112,z=46,distance=..1] run summon area_effect_cloud 54.5 112.2 46.2 {Duration:30000,Tags:["text"],CustomName:'{"text":"Door Override"}'}
-
 # call fall entity check
 function simondmc:core/summon_aecs
-
-# reset hint system
-scoreboard players reset global hint
-kill @e[tag=glower]
-
 # spawnpoint
 spawnpoint @a[tag=started] 11 100 39 -54
-
 # narrator line
 scoreboard players set id narrator 4
-
 # broadcast time if speedrun mode enabled
 execute if score speedrun timer matches 1 run tellraw @a ["",{"score":{"name":"lvl1_m","objective":"timer"},"color":"green"},{"text":"m","color":"green"},{"score":{"name":"lvl1_s","objective":"timer"},"color":"green"},{"text":"s","color":"green"}]
+# refresh hint system
+execute if score global hint matches 1 run function simondmc:core/hint/refresh_hint

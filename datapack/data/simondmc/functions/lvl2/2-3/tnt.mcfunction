@@ -50,7 +50,7 @@ execute if score global multiplayer matches 1 as @a[tag=started] if predicate si
 execute if score global multiplayer matches 1 as @a[tag=started] if predicate simondmc:lvl2/tnt as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run tag @s add moving
 
 # scripted motion - multiplayer
-execute if score global multiplayer matches 2.. as @a[tag=started] if predicate simondmc:lvl2/tnt if entity @a[tag=started,predicate=!simondmc:lvl2/tnt] as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run tellraw @a[tag=started,predicate=!simondmc:lvl2/tnt] {"text": "[You're not strong enough to reel in the TNT by yourself, you need all players on the platform]","color": "gray","italic": true}
+execute if score global multiplayer matches 2.. as @a[tag=started] if predicate simondmc:lvl2/tnt if entity @a[tag=started,predicate=!simondmc:lvl2/tnt] as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run tellraw @a[tag=started,predicate=simondmc:lvl2/tnt] {"text": "[You're not strong enough to reel in the TNT by yourself, you need all players on the platform]","color": "gray","italic": true}
 execute if score global multiplayer matches 2.. unless entity @a[tag=started,predicate=!simondmc:lvl2/tnt] as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run data merge entity @s {Motion:[0.0,1.1,-0.6]}
 execute if score global multiplayer matches 2.. unless entity @a[tag=started,predicate=!simondmc:lvl2/tnt] as @e[type=tnt,limit=1,tag=!moving] if score moving tnt matches 1 if score @s tnt_timer matches 45.. run tag @s add moving
 

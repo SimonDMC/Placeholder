@@ -10,8 +10,12 @@ other functions - called once
 
 the functions are divided into 2 namespaces - simondmc:* and dev:*
 only simondmc:* functions are ever called, and control how the map works
-dev:* functions are remnants of what i used to test stuff and usually restore a one-time event that is difficult to undo otherwise (such as destroying a wall with a pattern)
-they are really only there to speed up the creation of the map and take out the pain of testing stuff (also they're completely uncommented)
+dev:* functions are remnants of what i used to test stuff and usually restore a one-time event that is difficult to undo otherwise 
+(such as destroying a wall with a pattern) they are really only there to speed up the creation of the map and take out the pain of 
+testing stuff (also they're completely uncommented)
+
+i also added some utility dev:* functions such as skipping the cutscene, enabling/disabling spawn OOB prevention, skipping certain 
+parts of levels, and so on.
 
 the functions have a somewhat organized folder structure: all level-specific code is in that level's folder, and for later levels
 the folders are split into sub-levels (with the exception of :lvl4/global cuz that controls the "hallway")
@@ -25,5 +29,6 @@ also in case i have to mention this, taking some code is completely fine but ple
 
 - SimonDMC (eureka was also here but i wrote this whole thing)
 
-UPDATE: we have decided to switch levels 3 and 4, but it was sort of a last-minute decision so level 4 is internally referred to as level 3 and
-vice versa. i didnt really want to redo everything just due to swapping orders so that should hopefully explain 2_to_4 and 4_to_3 lmao
+UPDATE: we have decided to switch levels 3 and 4, but it was sort of a last-minute decision so level 4 is internally referred to as 
+level 3 and vice versa. i didnt really want to redo everything just due to swapping orders so that should hopefully explain 2_to_4 
+and 4_to_3 lmao

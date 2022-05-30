@@ -50,6 +50,11 @@ execute if score complete4 4 matches 1 unless score 4 4 matches 1 run clear @a[t
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run kill @e[type=item,nbt={Item:{id:"minecraft:golden_shovel"}}]
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run kill @e[type=item,nbt={Item:{id:"minecraft:scaffolding"}}]
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run kill @e[type=item,nbt={Item:{id:"minecraft:gravel"}}]
+# potential contraband from multiplayer dupe (i may or may not be too lazy to fix it)
+execute if score complete4 4 matches 1 unless score 4 4 matches 1 run clear @a[tag=started] iron_axe
+execute if score complete4 4 matches 1 unless score 4 4 matches 1 run clear @a[tag=started] oak_log
+execute if score complete4 4 matches 1 unless score 4 4 matches 1 run kill @e[type=item,nbt={Item:{id:"minecraft:iron_axe"}}]
+execute if score complete4 4 matches 1 unless score 4 4 matches 1 run kill @e[type=item,nbt={Item:{id:"minecraft:oak_log"}}]
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run recipe take @a[tag=started] blaze_powder
 execute if score complete4 4 matches 1 unless score 4 4 matches 1 run scoreboard players set 4 4 1
 

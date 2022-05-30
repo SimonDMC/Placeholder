@@ -11,6 +11,9 @@ execute unless entity @e[tag=text,x=54,y=112,z=46,distance=..1] run summon area_
 function simondmc:core/summon_aecs
 # spawnpoint
 spawnpoint @a[tag=started] 11 100 39 -54
+# clear contraband from potential multiplayer dupe (i may or may not be too lazy to fix it)
+clear @a iron_axe
+clear @a oak_log
 # narrator line
 scoreboard players set id narrator 4
 # broadcast time if speedrun mode enabled

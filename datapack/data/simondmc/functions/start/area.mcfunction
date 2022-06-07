@@ -1,12 +1,15 @@
 # ticking function, controls the start lobby area
 
 # spawn outside lobby prevention
-execute unless score oob intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..] run gamemode adventure @s
-execute unless score oob intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..] run tp @s -11 85 -15 -90 1.3 
+execute unless score oob intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..,tag=!spec] run gamemode adventure @s
+execute unless score oob intro matches 1 as @a[x=-17,y=85,z=-15,distance=20..,tag=!spec] run tp @s -11 85 -15 -90 1.3 
+
+# realms survival prevention
+execute as @a[gamemode=survival] run gamemode adventure @s
 
 # upwards boots door open
-execute as @a[x=-6,y=91,z=-15,dx=2] run setblock -5 94 -16 redstone_block
-execute unless entity @a[x=-6,y=91,z=-15,dx=2] run setblock -5 94 -16 air
+execute as @a[x=-6,y=91,z=-15,dx=2,tag=!spec] run setblock -5 94 -16 redstone_block
+execute unless entity @a[x=-6,y=91,z=-15,dx=2,tag=!spec] run setblock -5 94 -16 air
 
 # upwards boots functionality
 execute as @a[nbt={Inventory:[{id:"minecraft:leather_boots",Slot:100b,tag:{Special:1b}}]}] at @s run particle dust_color_transition 0.612 0.765 1.000 1 0.231 0.361 0.580 ~ ~ ~ .2 0 .2 0.2 1 force 

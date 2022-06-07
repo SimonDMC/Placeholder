@@ -6,6 +6,14 @@ execute if block -1001 122 -978 birch_button[powered=true] if block -1001 121 -9
 # button
 execute unless block -1001 121 -978 air if block -1001 122 -978 air run setblock -1001 122 -978 birch_button[face=floor,facing=south]
 
+# work-around for 1.19 launch bug (thank you poldslipper for helping me fix it)
+execute if block -1001 122 -978 minecraft:birch_button[powered=true] run scoreboard players set slime_bug_2 4 1
+execute if score slime_bug_2 4 matches 1.. run scoreboard players add slime_bug_2 4 1
+execute if score slime_bug_2 4 matches 3 run setblock -1001 119 -978 redstone_block
+execute if score slime_bug_2 4 matches 6 run setblock -1001 119 -978 air
+execute if score slime_bug_2 4 matches 6 run scoreboard players reset slime_bug_2 4
+execute if block -1001 122 -978 minecraft:birch_button[powered=true] run setblock -1001 122 -978 air
+
 # secret
 execute if block -1009 126 -979 polished_blackstone_button[powered=true] run setblock -1012 129 -981 minecraft:iron_trapdoor[facing=east]
 execute if block -1009 126 -979 polished_blackstone_button[powered=true] run playsound block.iron_trapdoor.close master @a -1012 129 -981 1

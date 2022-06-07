@@ -15,23 +15,31 @@
         "hidden": false
     },
     "criteria": {
-        "a": {
+        "requirement": {
             "trigger": "minecraft:location",
             "conditions": {
-                "position": {
-                    "x": {
-                        "min": 1016,
-                        "max": 1020
-                    },
-                    "y": {
-                        "min": 121,
-                        "max": 124  
-                    },
-                    "z": {
-                        "min": 1025,
-                        "max": 1031
+                "player": [{
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "location": {
+                            "position": {
+                                "x": {
+                                    "min": 1016,
+                                    "max": 1020
+                                },
+                                "y": {
+                                    "min": 121,
+                                    "max": 124  
+                                },
+                                "z": {
+                                    "min": 1025,
+                                    "max": 1031
+                                }
+                            }
+                        }
                     }
-                }
+                }]
             }
         }
     },

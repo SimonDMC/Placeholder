@@ -1,8 +1,5 @@
 {
 	"providers": [
-	
-	{"": "NEGATIVE SPACES - https://github.com/AmberWat/NegativeSpaceFont"},
-	
 	{
 		"type": "bitmap",
 		"file": "space:font/space_split.png",
@@ -73,9 +70,6 @@
 		"height": 63,
 		"chars": ["\uF82B"]
 	},
-	
-	{"": "CUSTOM FONT CHARACTERS"},
-	
 	{
 		"type": "bitmap",
 		"file": "minecraft:icons/fade.png",
@@ -243,9 +237,6 @@
 		"height": 65,
 		"chars": ["҉"]
 	},
-	
-	{"": "MAP LOGOS"},
-	
 	{
 		"type": "bitmap",
 		"file": "minecraft:logo/info.png",

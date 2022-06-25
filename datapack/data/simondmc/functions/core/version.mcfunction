@@ -2,7 +2,7 @@
 
 ## IMPORTANT!!!!!!!! CHANGE VERSION HERE WITH EVERY UPDATE
 
-tellraw @s ["",{"text":"Current version: v1.0.0 ","color":"yellow"},{"text":"[Check for new version]","color":"aqua","underlined": true,"clickEvent":{"action":"open_url","value":"https://simondmc.com/placeholder/version?v=1.0.0"}}]
+tellraw @s ["",{"text":"Current version: v1.0.1 ","color":"yellow"},{"text":"[Check for new version]","color":"aqua","underlined": true,"clickEvent":{"action":"open_url","value":"https://simondmc.com/placeholder/version?v=1.0.1"}}]
 ##                                        ↑↑↑↑↑                   →                       →                     →                  →                    →                     →                   →                   →       ↑↑↑↑↑
 ##                                        ↑↑↑↑↑                   →                       →                     →                  →                    →                     →                   →                   →       ↑↑↑↑↑
 ##                                        ↑↑↑↑↑                   →                       →                     →                  →                    →                     →                   →                   →       ↑↑↑↑↑

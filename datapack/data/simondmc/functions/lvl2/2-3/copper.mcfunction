@@ -48,4 +48,4 @@ execute unless score global copper_pressed matches 2 if block 54 112 46 minecraf
 execute unless score global copper_pressed matches 2 if block 54 112 46 minecraft:lever[powered=true] run scoreboard players set global copper_pressed 2
 
 # item activation prevention
-execute as @e[type=item,x=41,y=108,z=41,distance=..1] positioned 41 108 41 run tp @s @p
+execute as @e[type=item,x=41.5,y=108,z=41.5,distance=..1] positioned 41 108 41 run tp @s @p

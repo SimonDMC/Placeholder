@@ -71,3 +71,6 @@ execute as @a[x=-16,y=86,z=-24,dy=1] if predicate simondmc:sneaking run scoreboa
 execute unless entity @a[x=-16,y=86,z=-24,dy=1,predicate=simondmc:sneaking] run scoreboard players reset eur_sneak intro
 execute if score eur_sneak intro matches 100 run tellraw @a "§6it is me, the bear. i hope you're have a nice day. WHO ATE ALL THE LEMONS (by lemons i mean tomatoes)"
 execute if score eur_sneak intro matches 100 run scoreboard players reset eur_sneak intro
+
+# clear secret ladder
+clear @a[x=-24,y=89,z=-4,distance=..1] ladder

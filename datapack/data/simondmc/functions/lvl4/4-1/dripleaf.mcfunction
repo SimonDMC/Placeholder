@@ -25,3 +25,6 @@ execute unless entity @a[tag=started,predicate=simondmc:lvl4/cave_out] run setbl
 
 # torch conversion
 execute as @e[type=item,nbt={Item:{id:"minecraft:torch"}}] run data merge entity @s {Item:{id:"torch",tag:{CanPlaceOn:["smooth_quartz"]}}}
+
+# torch softlock patch
+execute as @e[type=item,x=-988,y=102,z=-1000,distance=..1] at @s run tp @s @p

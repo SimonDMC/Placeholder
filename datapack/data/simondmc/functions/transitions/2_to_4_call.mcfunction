@@ -27,3 +27,12 @@ scoreboard players reset @a[tag=started] pearl
 execute if score speedrun timer matches 1 run tellraw @a ["",{"score":{"name":"lvl2_m","objective":"timer"},"color":"green"},{"text":"m","color":"green"},{"score":{"name":"lvl2_s","objective":"timer"},"color":"green"},{"text":"s","color":"green"}]
 # refresh hint system
 execute if score global hint matches 1 run function simondmc:core/hint/refresh_hint
+# patch banners not displaying
+setblock -1009 141 -998 minecraft:moving_piston
+setblock -1009 141 -999 minecraft:moving_piston
+setblock -1009 141 -1000 minecraft:moving_piston
+setblock -1008 139 -998 minecraft:moving_piston
+setblock -1008 139 -999 minecraft:moving_piston
+setblock -1008 139 -1000 minecraft:moving_piston
+# patch house crusher softlock
+setblock -1003 126 -986 minecraft:barrier

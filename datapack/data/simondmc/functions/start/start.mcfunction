@@ -47,3 +47,13 @@ tag @a add started
 
 # narrator line
 scoreboard players set id narrator 1
+
+# lvl1 skip patch (too lazy to redo entire world setup)
+setblock -12 64 2 minecraft:barrier
+setblock -12 64 12 minecraft:barrier
+setblock -12 64 22 minecraft:barrier
+setblock -2 99 25 minecraft:barrier
+
+# lvl2 pearl throw skip patch (sorta)
+setblock 41 109 44 minecraft:cobblestone_wall
+setblock 41 110 44 minecraft:cobblestone_wall

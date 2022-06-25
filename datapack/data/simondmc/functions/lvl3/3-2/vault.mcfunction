@@ -1,6 +1,11 @@
 # ticking function, controls the vault poggies
 # i am aware this could be done a lot better but this makes it easy to see whats going on and shouldnt be too hard to understand
 
+# helmet softlock patch
+execute as @e[tag=left,nbt={ArmorItems:[{},{},{},{id:"minecraft:iron_helmet"}]}] run give @r iron_helmet
+execute as @e[tag=middle,nbt={ArmorItems:[{},{},{},{id:"minecraft:iron_helmet"}]}] run give @r iron_helmet
+execute as @e[tag=right,nbt={ArmorItems:[{},{},{},{id:"minecraft:iron_helmet"}]}] run give @r iron_helmet
+
 ## SELECTION
 
 # left

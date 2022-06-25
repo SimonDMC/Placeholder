@@ -24,3 +24,6 @@ schedule function simondmc:lvl3/3-1/narrator_line 6s
 execute if score speedrun timer matches 1 run tellraw @a ["",{"score":{"name":"lvl4_m","objective":"timer"},"color":"green"},{"text":"m","color":"green"},{"score":{"name":"lvl4_s","objective":"timer"},"color":"green"},{"text":"s","color":"green"}]
 # refresh hint system
 execute if score global hint matches 1 run function simondmc:core/hint/refresh_hint
+# magnetism skip patch
+setblock 1013 96 1030 minecraft:barrier
+setblock 1012 95 1031 minecraft:barrier

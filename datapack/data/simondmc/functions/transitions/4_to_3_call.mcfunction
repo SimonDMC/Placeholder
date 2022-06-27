@@ -2,6 +2,7 @@
 
 effect clear @a slowness
 clear @a[tag=started] filled_map
+clear @a[tag=started] white_banner
 xp set @a[tag=started] 0
 xp set @a[tag=started] 0 levels
 execute if score global multiplayer matches 2.. run effect give @a[tag=started] invisibility 5 1 true
@@ -27,3 +28,5 @@ execute if score global hint matches 1 run function simondmc:core/hint/refresh_h
 # magnetism skip patch
 setblock 1013 96 1030 minecraft:barrier
 setblock 1012 95 1031 minecraft:barrier
+# terrain soft-lock patch
+setblock 1005 102 1006 minecraft:oak_wood

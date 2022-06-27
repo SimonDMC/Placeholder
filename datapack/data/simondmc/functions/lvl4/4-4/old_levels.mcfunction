@@ -81,3 +81,9 @@ execute as @a[tag=started] if score @s coal matches 1 at @s run playsound entity
 execute as @a[tag=started] if score @s stone matches 1 run scoreboard players add pickaxe2 break 1
 scoreboard players reset @a[tag=started] stone
 scoreboard players reset @a[tag=started] coal
+
+# crafting system fail-safe
+execute as @a[nbt={Inventory:[{id:"minecraft:oak_planks",Count:20b}]}] run give @s oak_log 3
+execute as @a[nbt={Inventory:[{id:"minecraft:oak_planks",Count:20b}]}] run clear @s oak_planks 12
+execute as @a[nbt={Inventory:[{id:"minecraft:stick",Count:16b}]}] run give @s oak_planks 4
+execute as @a[nbt={Inventory:[{id:"minecraft:stick",Count:16b}]}] run clear @s stick 8

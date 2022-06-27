@@ -73,3 +73,11 @@ execute unless score entered_p2 4 matches 1 if entity @a[tag=started,x=-1004,y=1
 
 # elevator button in secret
 execute if block -1021 132 -983 air run setblock -1021 132 -983 birch_button[facing=west,face=floor]
+
+# placeable banner patch
+execute if block -1013 129 -981 minecraft:white_banner run give @r minecraft:white_banner{CanPlaceOn:["purple_concrete_powder"]}
+execute if block -1013 129 -981 minecraft:white_banner run setblock -1013 129 -981 air
+execute if block -1013 130 -981 minecraft:white_banner run give @r minecraft:white_banner{CanPlaceOn:["purple_concrete_powder"]}
+
+# secret warning
+execute as @a if predicate simondmc:lvl4/proto_secret run title @s actionbar "§aThis is a secret area, you don't need anything from here to progress."

@@ -30,3 +30,9 @@ scoreboard players reset @a[tag=started] coal
 execute as @a[tag=started] if predicate simondmc:lvl1/stone_stuck at @s unless block ~ ~-.1 ~ air unless block ~-1 ~1 ~ air unless block ~1 ~1 ~ air unless block ~ ~1 ~-1 air unless block ~ ~1 ~1 air run title @s actionbar {"text":">:(","color":"dark_red"}
 execute as @a[tag=started] if predicate simondmc:lvl1/stone_stuck at @s unless block ~ ~-.1 ~ air unless block ~-1 ~1 ~ air unless block ~1 ~1 ~ air unless block ~ ~1 ~-1 air unless block ~ ~1 ~1 air run effect give @s levitation 1 3 true
 execute as @a[tag=started] if predicate simondmc:lvl1/stone_stuck at @s if block ~-1 ~ ~ air if block ~1 ~ ~ air if block ~ ~ ~-1 air if block ~ ~ ~1 air run effect clear @s levitation
+
+# fake stone pickaxe patch
+execute as @a[nbt={Inventory:[{id:"minecraft:stone_pickaxe"}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:stone_pickaxe",tag:{CanDestroy:["minecraft:coal_ore"],display:{Name:'{"text":"Coal-Breaking Pickaxe","italic":false}',Lore:['{"text":" "}','{"text":"Particularly good at","color":"dark_gray","italic":false}','{"text":"breaking coal.","color":"dark_gray","italic":false}']},HideFlags:2}}]}] run scoreboard players set temp stone 1
+execute if score temp stone matches 1 run clear @a stone_pickaxe
+execute if score temp stone matches 1 run give @r stone_pickaxe{CanDestroy:["minecraft:coal_ore"],display:{Name:'{"text":"Coal-Breaking Pickaxe","italic":false}',Lore:['{"text":" "}','{"text":"Particularly good at","color":"dark_gray","italic":false}','{"text":"breaking coal.","color":"dark_gray","italic":false}']},HideFlags:2}
+execute if score temp stone matches 1 run scoreboard players reset temp stone

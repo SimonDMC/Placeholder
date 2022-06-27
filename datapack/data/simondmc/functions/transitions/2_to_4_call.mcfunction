@@ -36,3 +36,10 @@ setblock -1008 139 -999 minecraft:moving_piston
 setblock -1008 139 -1000 minecraft:moving_piston
 # patch house crusher softlock
 setblock -1003 126 -986 minecraft:barrier
+# placeable banner patch
+setblock -1014 129 -981 minecraft:moving_piston
+# infinite log oob patch
+setblock -1017 131 -984 oak_log
+setblock -1015 131 -984 oak_log
+# confusing log patch
+setblock -994 117 -991 dirt

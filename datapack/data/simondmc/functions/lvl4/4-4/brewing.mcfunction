@@ -39,3 +39,8 @@ execute if block -1005 121 -993 brewing_stand{Items:[{Slot:2b,id:"minecraft:poti
 execute unless score foot 4 matches 1 if block -1005 121 -993 brewing_stand{Items:[{Slot:3b,id:"minecraft:rabbit_foot"}]} positioned -1005 121 -993 run playsound entity.villager.no master @p
 execute unless score foot 4 matches 1 if block -1005 121 -993 brewing_stand{Items:[{Slot:3b,id:"minecraft:rabbit_foot"}]} positioned -1005 121 -993 run give @p rabbit_foot
 execute unless score foot 4 matches 1 if block -1005 121 -993 brewing_stand{Items:[{Slot:3b,id:"minecraft:rabbit_foot"}]} positioned -1005 121 -993 run item replace block -1005 121 -993 container.3 with air
+
+# drink awkward potion patch
+execute as @a[nbt={Inventory:[{id:"minecraft:potion",tag:{Potion:"minecraft:awkward"}}]}] run scoreboard players set hadawkward 4 1
+execute as @a[nbt={Inventory:[{id:"minecraft:glass_bottle"}]}] if score hadawkward 4 matches 1 run give @s potion{Potion:"minecraft:awkward"}
+execute as @a[nbt={Inventory:[{id:"minecraft:glass_bottle"}]}] if score hadawkward 4 matches 1 run clear @s glass_bottle

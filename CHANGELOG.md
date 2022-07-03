@@ -1,3 +1,7 @@
+**v1.0.3 - Awkward Patch [2022-07-03]** - [download](https://github.com/SimonDMC/Placeholder/releases/download/v1.0.3/Placeholder.zip)
+
+- Fixed being able to drink the awkward potion in prototype level (reported by ZaitY)
+
 **v1.0.2 - Prototype Tweaks [2022-06-27]** - [download](https://github.com/SimonDMC/Placeholder/releases/download/v1.0.2/Placeholder.zip)
 
 - Added a backup system for crafting in prototype level (first reported by Nathan)

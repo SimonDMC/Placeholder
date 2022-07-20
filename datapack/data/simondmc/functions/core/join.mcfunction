@@ -28,3 +28,5 @@ advancement grant @s only simondmc:util/show_all
 scoreboard players reset oob intro
 # spectator trigger
 scoreboard players enable @s spectator
+# fix spawning outside the map
+tp @a -11 85 -15 -90 1.3

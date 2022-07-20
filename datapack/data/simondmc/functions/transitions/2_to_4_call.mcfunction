@@ -43,3 +43,5 @@ setblock -1017 131 -984 oak_log
 setblock -1015 131 -984 oak_log
 # confusing log patch
 setblock -994 117 -991 dirt
+# patch stone over void
+fill -1011 128 -977 -1005 124 -982 infested_stone replace stone

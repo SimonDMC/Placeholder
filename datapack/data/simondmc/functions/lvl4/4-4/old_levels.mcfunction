@@ -83,7 +83,11 @@ scoreboard players reset @a[tag=started] stone
 scoreboard players reset @a[tag=started] coal
 
 # crafting system fail-safe
-execute as @a[nbt={Inventory:[{id:"minecraft:oak_planks",Count:20b}]}] run give @s oak_log 3
-execute as @a[nbt={Inventory:[{id:"minecraft:oak_planks",Count:20b}]}] run clear @s oak_planks 12
-execute as @a[nbt={Inventory:[{id:"minecraft:stick",Count:16b}]}] run give @s oak_planks 4
-execute as @a[nbt={Inventory:[{id:"minecraft:stick",Count:16b}]}] run clear @s stick 8
+execute store result score pcount 4 run clear @r oak_planks 0
+execute store result score scount 4 run clear @r stick 0
+
+execute if score pcount 4 matches 20.. run give @r oak_log 3
+execute if score pcount 4 matches 20.. run clear @a oak_planks 12
+
+execute if score scount 4 matches 16.. run give @r oak_planks 4
+execute if score scount 4 matches 16.. run clear @a stick 8

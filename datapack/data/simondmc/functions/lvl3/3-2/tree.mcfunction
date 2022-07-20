@@ -33,7 +33,7 @@ execute if score cutscene tree matches 22 as @a at @s run playsound entity.playe
 execute if score cutscene tree matches 42 run tp @a[tag=started] 1057.97 100.00 1029.62 -90.38 -0.09
 execute if score cutscene tree matches 42 run gamemode adventure @a[tag=started]
 execute if score cutscene tree matches 42 run scoreboard players set global tree 1
-execute if score cutscene tree matches 42 as @a[tag=started,level=0] run xp set @s 1 levels
+execute if score cutscene tree matches 42 run xp set @a 2 levels
 
 # scream at the player if theyre missing stuff
 execute unless block 1078 106 1018 barrel{Items:[{Slot:13b}]} unless block 1084 101 1027 brown_shulker_box{Items:[{Slot:12b}]} unless block 1084 101 1027 brown_shulker_box{Items:[{Slot:14b}]} unless block 1076 101 1039 barrel{Items:[{Slot:13b}]} run scoreboard players set items tree 1

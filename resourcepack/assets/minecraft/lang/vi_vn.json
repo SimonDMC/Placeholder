@@ -30,6 +30,10 @@
 	"block.minecraft.soul_soil": "Gray Concrete Powder",
 	"block.minecraft.tube_coral_fan": "Gunpowder",
 	"enchantment.minecraft.projectile_protection": "Magnetism",
+	"enchantment.minecraft.protection": "Magnetism",
+	"enchantment.minecraft.unbreaking": "Magnetism",
+	"enchantment.minecraft.blast_protection": "Magnetism",
+	"enchantment.minecraft.aqua_affinity": "Magnetism",
 	"custom.elevator_die": " was squished in an elevator",
 	
 	"": "RESOURCE PACK DETECTION SYSTEM",

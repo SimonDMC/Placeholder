@@ -47,3 +47,6 @@ kill @e[tag=glower]
 
 # tp everyone to person who went in
 execute if score global multiplayer matches 2.. run tp @a[tag=started] @s
+
+# clear eyepiece slowness
+effect clear @a slowness

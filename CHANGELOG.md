@@ -1,3 +1,11 @@
+**v1.0.4 - Enchanting Enhancement [2022-07-20]** - [download](https://github.com/SimonDMC/Placeholder/releases/download/v1.0.4/Placeholder.zip)
+
+- Fixed iron helmet enchantment system occasionally breaking (first reported by pauldersgate)
+- Fixed sometimes spawning outside the map
+- Removed the ability to break the stone above void in double prototype level (reported by Micah)
+- Fixed keeping slowness after completing the map if holding eyepiece during ending (reported by Saytto)
+- Revamped backup crafting system in prototype level
+
 **v1.0.3 - Awkward Patch [2022-07-03]** - [download](https://github.com/SimonDMC/Placeholder/releases/download/v1.0.3/Placeholder.zip)
 
 - Fixed being able to drink the awkward potion in prototype level (reported by ZaitY)

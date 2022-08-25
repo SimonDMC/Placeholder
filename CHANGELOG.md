@@ -1,3 +1,10 @@
+**v1.0.5 - Out of Bounds Shenanigans [2022-08-25]** - [download](https://github.com/SimonDMC/Placeholder/releases/download/v1.0.5/Placeholder.zip)
+
+- Fixed being able to escape the map via the level 2 building (reported by Charcoal190)
+- Fixed being able to skip level 2 and escape the map from level 1 (reported by GaganogHD)
+- Fixed retaining slowness when crafting concrete powder
+- Patched a soft-lock involving enchanting the secret armor
+
 **v1.0.4 - Enchanting Enhancement [2022-07-20]** - [download](https://github.com/SimonDMC/Placeholder/releases/download/v1.0.4/Placeholder.zip)
 
 - Fixed iron helmet enchantment system occasionally breaking (first reported by pauldersgate)

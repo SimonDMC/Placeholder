@@ -57,3 +57,10 @@ setblock -2 99 25 minecraft:barrier
 # lvl2 pearl throw skip patch (sorta)
 setblock 41 109 44 minecraft:cobblestone_wall
 setblock 41 110 44 minecraft:cobblestone_wall
+
+# lvl1 oob patch
+setblock -4 69 30 barrier
+setblock -4 69 28 barrier
+
+# lvl2 oob patch
+setblock 3 88 56 barrier

@@ -20,3 +20,20 @@ execute as @a[tag=started,nbt={Inventory:[{id:"minecraft:iron_helmet",Slot:103b,
 
 # barriers
 execute if block 1019 98 1029 iron_block run fill 1020 98 1029 1025 98 1029 barrier
+
+# secret armor enchanting patch
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_helmet",tag:{Enchantments:[{}]}}]}] unless score ench-secret-helmet eyepiece matches 1 run xp set @s 2 levels
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_helmet",tag:{Enchantments:[{}]}}]}] unless score ench-secret-helmet eyepiece matches 1 run give @s lapis_lazuli
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_helmet",tag:{Enchantments:[{}]}}]}] run scoreboard players set ench-secret-helmet eyepiece 1
+
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_chestplate",tag:{Enchantments:[{}]}}]}] unless score ench-secret-chestplate eyepiece matches 1 run xp set @s 2 levels
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_chestplate",tag:{Enchantments:[{}]}}]}] unless score ench-secret-chestplate eyepiece matches 1 run give @s lapis_lazuli
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_chestplate",tag:{Enchantments:[{}]}}]}] run scoreboard players set ench-secret-chestplate eyepiece 1
+
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_leggings",tag:{Enchantments:[{}]}}]}] unless score ench-secret-leggings eyepiece matches 1 run xp set @s 2 levels
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_leggings",tag:{Enchantments:[{}]}}]}] unless score ench-secret-leggings eyepiece matches 1 run give @s lapis_lazuli
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_leggings",tag:{Enchantments:[{}]}}]}] run scoreboard players set ench-secret-leggings eyepiece 1
+
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_boots",tag:{Enchantments:[{}]}}]}] unless score ench-secret-boots eyepiece matches 1 run xp set @s 2 levels
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_boots",tag:{Enchantments:[{}]}}]}] unless score ench-secret-boots eyepiece matches 1 run give @s lapis_lazuli
+execute as @a[nbt={Inventory:[{id:"minecraft:leather_boots",tag:{Enchantments:[{}]}}]}] run scoreboard players set ench-secret-boots eyepiece 1

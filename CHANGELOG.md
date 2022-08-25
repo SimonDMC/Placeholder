@@ -2,8 +2,8 @@
 
 - Fixed being able to escape the map via the level 2 building (reported by Charcoal190)
 - Fixed being able to skip level 2 and escape the map from level 1 (reported by GaganogHD)
-- Fixed retaining slowness when crafting concrete powder
-- Patched a soft-lock involving enchanting the secret armor
+- Fixed retaining slowness when crafting concrete powder (reported by Error404)
+- Patched a soft-lock involving enchanting the secret armor (reported by Sciyan)
 
 **v1.0.4 - Enchanting Enhancement [2022-07-20]** - [download](https://github.com/SimonDMC/Placeholder/releases/download/v1.0.4/Placeholder.zip)
 

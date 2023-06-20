@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:icons/hint_on"
+    "layer0": "minecraft:item/icons/hint_on"
   },
 	"display": {
 		"thirdperson_lefthand": {

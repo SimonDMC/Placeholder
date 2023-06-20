@@ -4,4 +4,4 @@ execute store result score version intro run data get entity @r DataVersion
 
 ## CHANGE THIS IF MC VERSION UPDATE
 
-execute unless score version intro matches 3105 run tellraw @a ["",{"text":"-----------------------------------------","bold":true,"strikethrough":true,"color":"red"},{"text":"\n"},{"text":"WARNING: You are playing in the wrong Minecraft version.\nThe map may not work as intended.\nPlease reinstall the map and play with version ","bold":true,"color":"red"},{"text":"1.19","bold":true,"color":"green"},{"text":"\n"},{"text":"-----------------------------------------","bold":true,"strikethrough":true,"color":"red"}]
+execute unless score version intro matches 3465 run tellraw @a ["",{"text":"-----------------------------------------","bold":true,"strikethrough":true,"color":"red"},{"text":"\n"},{"text":"WARNING: You are playing in the wrong Minecraft version.\nThe map may not work as intended.\nPlease reinstall the map and play with version ","bold":true,"color":"red"},{"text":"1.20.1","bold":true,"color":"green"},{"text":"\n"},{"text":"-----------------------------------------","bold":true,"strikethrough":true,"color":"red"}]

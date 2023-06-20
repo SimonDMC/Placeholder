@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "player/simon",
-		"particle": "player/simon"
+		"0": "item/player/simon",
+		"particle": "item/player/simon"
 	},
 	"elements": [
 		{

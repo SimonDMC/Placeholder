@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"recipe": "icons/exclamation_mark"
+		"recipe": "item/icons/exclamation_mark"
 	},
 	"elements": [
 		{

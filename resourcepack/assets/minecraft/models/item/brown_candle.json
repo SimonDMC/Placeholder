@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "player/eureka",
-		"particle": "player/eureka"
+		"0": "item/player/eureka",
+		"particle": "item/player/eureka"
 	},
 	"elements": [
 		{

@@ -13,10 +13,12 @@ execute as @e[type=ender_pearl] if predicate simondmc:lvl2/pearl_success run set
 execute as @e[type=ender_pearl] if predicate simondmc:lvl2/pearl_success run tp @a[tag=started] 52.51 111.00 48.50 -89.71 12.47
 execute as @e[type=ender_pearl] if predicate simondmc:lvl2/pearl_success run kill @s
 
-# player in door failsafe
-execute as @a[tag=started] if predicate simondmc:lvl2/pearl_success unless score @s pearl matches 2 run clear @a[tag=started] ender_pearl
-execute as @a[tag=started] if predicate simondmc:lvl2/pearl_success unless score @s pearl matches 2 run setblock 33 107 36 air
-execute as @a[tag=started] if predicate simondmc:lvl2/pearl_success unless score @s pearl matches 2 run scoreboard players set @a[tag=started] pearl 2
+# allow walking through door but prevent wall clipping
+execute as @a[tag=started] if predicate simondmc:lvl2/pearl_success if score global copper_pressed matches 1 unless score @s pearl matches 2 run clear @a[tag=started] ender_pearl
+execute as @a[tag=started] if predicate simondmc:lvl2/pearl_success if score global copper_pressed matches 1 unless score @s pearl matches 2 run setblock 33 107 36 air
+execute as @a[tag=started] if predicate simondmc:lvl2/pearl_success if score global copper_pressed matches 1 unless score @s pearl matches 2 run scoreboard players set @a[tag=started] pearl 2
+execute as @a[tag=started] if predicate simondmc:lvl2/pearl_success unless score global copper_pressed matches 1 unless score @s pearl matches 2 at @s run playsound entity.villager.no master @s
+execute as @a[tag=started] if predicate simondmc:lvl2/pearl_success unless score global copper_pressed matches 1 unless score @s pearl matches 2 run tp @s 50.76 112.68 48.53
 
 # endermites begone
 kill @e[type=endermite]

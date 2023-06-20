@@ -1,3 +1,11 @@
+**v1.0.6 - Ender Pearl Extravaganza [2023-06-20]** - [download](https://github.com/SimonDMC/Placeholder/releases/download/v1.0.6/Placeholder.zip)
+
+- Updated the map to 1.20.1
+- Added a visual distinction to secondary narrator in subtitles
+- Fixed being able to escape the map by ender pearling on top of the hut roof in level 2 (reported by anonymous)
+- Fixed being able to escape the map by jumping onto the crane from the package in level 1
+- Fixed skipping the copper door puzzle in level 2 by phasing through walls using an ender pearl
+
 **v1.0.5 - Out of Bounds Shenanigans [2022-08-25]** - [download](https://github.com/SimonDMC/Placeholder/releases/download/v1.0.5/Placeholder.zip)
 
 - Fixed being able to escape the map via the level 2 building (reported by Charcoal190)

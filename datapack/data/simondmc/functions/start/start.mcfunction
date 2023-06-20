@@ -61,6 +61,11 @@ setblock 41 110 44 minecraft:cobblestone_wall
 # lvl1 oob patch
 setblock -4 69 30 barrier
 setblock -4 69 28 barrier
+setblock -3 69 31 barrier
 
 # lvl2 oob patch
 setblock 3 88 56 barrier
+
+# another lvl2 oob patch
+fill 24 115 62 23 119 66 barrier replace air
+fill 24 114 61 23 115 61 barrier

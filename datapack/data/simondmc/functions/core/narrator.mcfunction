@@ -99,10 +99,10 @@ execute if score 27 narrator matches 137 run scoreboard players reset 27 narrato
 execute if score id narrator matches 8 run scoreboard players set 8 narrator 1
 execute if score 8 narrator matches 1.. run scoreboard players add 8 narrator 1
 execute if score 8 narrator matches 2 as @a at @s run playsound narrator.lever_lock voice @s ~ ~ ~
-execute if score 8 narrator matches 2 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"Here's the thing. It would have taken us mere minutes to provide a patch for this softlock. We could have just placed a lever on the wall! Or a clickable message in chat! Or even just a second tunnel!","color":"gray"}]
-execute if score 8 narrator matches 231 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"But no, no, no, no, no. We have instead spent our time carefully crafting the perfect message to encapsulate our pure anger and hatred for you.","color":"gray"}]
-execute if score 8 narrator matches 422 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"All of this purely because you wanted to challenge that message at the very beginning - to find a softlock. But you didn't find a softlock - you failed. ","color":"gray"}]
-execute if score 8 narrator matches 628 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"There is a way out. And if you think for a second I'm going to tell you what it is, you have underestimated everything I stand for. You did this to yourself. Was it worth it?","color":"gray"}]
+execute if score 8 narrator matches 2 run tellraw @a [{"text":"[Narrator]: ","color":"aqua"},{"text":"Here's the thing. It would have taken us mere minutes to provide a patch for this softlock. We could have just placed a lever on the wall! Or a clickable message in chat! Or even just a second tunnel!","color":"gray"}]
+execute if score 8 narrator matches 231 run tellraw @a [{"text":"[Narrator]: ","color":"aqua"},{"text":"But no, no, no, no, no. We have instead spent our time carefully crafting the perfect message to encapsulate our pure anger and hatred for you.","color":"gray"}]
+execute if score 8 narrator matches 422 run tellraw @a [{"text":"[Narrator]: ","color":"aqua"},{"text":"All of this purely because you wanted to challenge that message at the very beginning - to find a softlock. But you didn't find a softlock - you failed. ","color":"gray"}]
+execute if score 8 narrator matches 628 run tellraw @a [{"text":"[Narrator]: ","color":"aqua"},{"text":"There is a way out. And if you think for a second I'm going to tell you what it is, you have underestimated everything I stand for. You did this to yourself. Was it worth it?","color":"gray"}]
 execute if score 8 narrator matches 628 run scoreboard players reset 8 narrator
 
 execute if score id narrator matches 9 run scoreboard players set 9 narrator 1
@@ -201,11 +201,11 @@ execute if score 23 narrator matches 1.. run scoreboard players add 23 narrator 
 execute if score 23 narrator matches 2 as @a at @s run playsound narrator.first_secret voice @s ~ ~ ~
 execute if score 23 narrator matches 2 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"Well well well, you found a secret! Here's the thing, this message is played on the first secret you find, whether that be in the first level, or the last.","color":"gray"}]
 execute if score 23 narrator matches 146 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"Therefore, my colleague will now deliver four pieces of dialogue. Kindly block your ears for the three that do not apply.","color":"gray"}]
-execute if score 23 narrator matches 253 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"Level one: Impressive! You found the secret on the very first level - you must have a good attention to detail and and astute awareness of your surroundings.","color":"gray"}]
-execute if score 23 narrator matches 416 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"Level two: Well you missed the first secret, but I mean you found one, I guess?","color":"gray"}]
-execute if score 23 narrator matches 520 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"Level three: Okay, it took you three levels to find a secret? And this was the easiest one. Gotta say, not impressed.","color":"gray"}]
-execute if score 23 narrator matches 684 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"Level four: Okay, we spent countless hours carefully crafting secrets to improve your experience, and you don't have the patience or self-discipline to just… explore!","color":"gray"}]
-execute if score 23 narrator matches 883 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"It's the final level! You should be ashamed.","color":"gray"}]
+execute if score 23 narrator matches 253 run tellraw @a [{"text":"[Narrator]: ","color":"aqua"},{"text":"Level one: Impressive! You found the secret on the very first level - you must have a good attention to detail and and astute awareness of your surroundings.","color":"gray"}]
+execute if score 23 narrator matches 416 run tellraw @a [{"text":"[Narrator]: ","color":"aqua"},{"text":"Level two: Well you missed the first secret, but I mean you found one, I guess?","color":"gray"}]
+execute if score 23 narrator matches 520 run tellraw @a [{"text":"[Narrator]: ","color":"aqua"},{"text":"Level three: Okay, it took you three levels to find a secret? And this was the easiest one. Gotta say, not impressed.","color":"gray"}]
+execute if score 23 narrator matches 684 run tellraw @a [{"text":"[Narrator]: ","color":"aqua"},{"text":"Level four: Okay, we spent countless hours carefully crafting secrets to improve your experience, and you don't have the patience or self-discipline to just… explore!","color":"gray"}]
+execute if score 23 narrator matches 883 run tellraw @a [{"text":"[Narrator]: ","color":"aqua"},{"text":"It's the final level! You should be ashamed.","color":"gray"}]
 execute if score 23 narrator matches 883 run scoreboard players reset 23 narrator
 
 execute if score id narrator matches 24 run scoreboard players set 24 narrator 1
@@ -221,11 +221,5 @@ execute if score 25 narrator matches 2 as @a at @s run playsound narrator.long_h
 execute if score 25 narrator matches 2 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"You needed a hint after 21 minutes and 47 seconds.","color":"gray"}]
 execute if score 25 narrator matches 75 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"I mean, I'm not judging you. But twenty minutes? §oThat's going on the spreadsheet.","color":"gray"}]
 execute if score 25 narrator matches 75 run scoreboard players reset 25 narrator
-
-execute if score id narrator matches 26 run scoreboard players set 26 narrator 1
-execute if score 26 narrator matches 1.. run scoreboard players add 26 narrator 1
-execute if score 26 narrator matches 2 as @a at @s run playsound narrator.epilogue voice @s ~ ~ ~
-execute if score 26 narrator matches 89 run tellraw @a [{"text":"[Narrator]: ","color":"yellow"},{"text":"I am currently saying this text.","color":"gray"}]
-execute if score 26 narrator matches 89 run scoreboard players reset 26 narrator
 
 scoreboard players reset id narrator
